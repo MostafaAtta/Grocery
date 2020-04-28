@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@drawable/white_semi_corner_layout_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/txtViewDelete"
+                android:layout_toLeftOf="@+id/txtViewDelete"
+                android:minHeight="@dimen/dp80">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dark_red_semi_corner_left_layout_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/manage_address_txt_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:textColor="@color/red_line_color"
+                            android:textSize="@dimen/text_dp17" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/manage_address_txt_address_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:gravity="left"
+                        android:textColor="@color/purple_bg"
+                        android:textSize="@dimen/text_dp15" />
+
+                    <TextView
+                        android:id="@+id/manage_address_txt_address_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/grey_color_txt"
+                        android:textSize="@dimen/text_dp15" />
+
+                    <TextView
+                        android:id="@+id/manage_address_txt_address_line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/grey_color_txt"
+                        android:textSize="@dimen/text_dp15" />
+
+                    <TextView
+                        android:id="@+id/manage_address_txt_building_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/grey_color_txt"
+                        android:textSize="@dimen/text_dp15" />
+
+                    <TextView
+                        android:id="@+id/manage_address_txt_street_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@color/grey_color_txt"
+                        android:textSize="@dimen/text_dp15" />
+
+                    <TextView
+                        android:id="@+id/manage_address_txt_address_line4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:gravity="left"
+                        android:textColor="@color/grey_color_txt"
+                        android:textSize="@dimen/text_dp15" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtViewEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:gravity="center"
+                android:text="@string/edit"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_dp15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp15"
+                android:text="@string/delete"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_dp15"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/manage_address_view_disable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="#50888888" />
+
+    </FrameLayout>
+
+</LinearLayout>

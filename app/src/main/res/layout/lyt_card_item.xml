@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lyt_card_lyt_payment_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lyt_card_txt_card_no"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_weight="0.6"
+                android:background="@color/dark_purple"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp15" />
+
+            <TextView
+                android:id="@+id/lyt_card_txt_select"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@drawable/dark_red_layout_no_border_bg"
+                android:gravity="center"
+                android:padding="@dimen/dp8"
+                android:text="@string/select_caps"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/lyt_card_txt_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp5"
+                android:background="@drawable/dark_red_layout_no_border_bg"
+                android:gravity="center"
+                android:padding="@dimen/dp8"
+                android:visibility="gone"
+                android:text="@string/delete_caps"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/card_footer_img_add_card"
+                android:layout_width="@dimen/dp45"
+                android:layout_height="@dimen/dp45"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp5"
+                android:background="@drawable/dark_red_layout_no_border_bg"
+                android:gravity="center"
+                android:padding="@dimen/dp6"
+                android:src="@mipmap/unchecked" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

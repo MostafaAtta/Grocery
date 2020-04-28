@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#80c9c0</color>
+    <color name="colorPrimaryTransparent">#30ADCB13</color>
+    <color name="colorPrimaryDark">#52837d</color>
+    <color name="colorAccent">#80c9c0</color>
+    <color name="lightgreen">#46AFA8</color>
+    <color name="darker_green">#FF3C514F</color>
+
+    <color name="promo_color">#70C8C4</color>
+
+    <color name="gray">#C3C3C3</color>
+    <color name="lightGrayColor">#E7E8E8</color>
+    <color name="indicator_color">#FFFFFF</color>
+    <color name="login_bg">#D9d6d6d6</color>
+    <color name="blue_color_link">#2b71f0</color>
+    <color name="divider">#DCDCDC</color>
+    <color name="transparent_color">@android:color/transparent</color>
+    <color name="red_color">@android:color/holo_red_light</color>
+    <color name="text_bg_color">#bbbbbb</color>
+    <color name="text_red_color">#ee5365</color>
+    <color name="menu_selected">#b43847</color>
+    <color name="menu_red">#FFb43847</color>
+    <color name="menu_white">#FFFFFFFF</color>
+    <color name="grey_btn_bg">#c3c5c5</color>
+    <color name="logo_color">#fffeff</color>
+
+
+    <color name="blue_txt">#81c9c4</color>
+    <color name="grayColorBackground">#f5f5f5</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="pink">#CE3A5C</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGrey">#7f7f7f</color>
+
+    <!--tool bar colors-->
+
+    <color name="backgroundColor">#F2F2F4</color>
+
+    <color name="hintColor">#d4d4d4</color>
+
+    <!--City Screen-->
+
+    <!--Registration-->
+
+
+    <!--Password recovery-->
+
+    <!--Tab Bar Color -->
+
+    <!--Driver Status-->
+
+    <!--drawer-->
+
+    <!--My Profile-->
+
+    <!--Transit Screen-->
+
+    <!--Job Details Screen-->
+    <color name="DARK_GRAY_TXT_COLOR">#A8A8A8</color>
+
+
+    <!--Rate App-->
+
+
+    <!--Quick Snapshots Screen _H-->
+    <color name="YELLOW_LIGHT_GRADIENT">#F8CA68</color>
+    <color name="GRAY_COLOR">#7E7E7E</color>
+
+
+    <!--For Route-->
+
+
+    <color name="text_color">#fffefb</color>
+
+    <!--frag_register screen-->
+    <!--Verify email screen-->
+    <!--Change email screen-->
+    <color name="text_grey">#979797</color>
+    <color name="trans_text_grey">#BB000000</color>
+
+    <!--Account screen-->
+
+    <!--Add occupation screen-->
+
+    <color name="bold_green">#3A938D</color>
+    <color name="bgg">#58A4A0</color>
+    <color name="side_menu_color">#479A94</color>
+    <color name="search_bg">#3b938d</color>
+    <color name="dark_green">#429689</color>
+    <color name="edt_txt_color">#c0c2c2</color>
+    <color name="btn_bg">#81c8c4</color>
+    <color name="light_yellow_bg">#f9f1c0</color>
+    <color name="business_edt_txt_bg">#fcfaed</color>
+    <color name="edt_txt_border">#9da09d</color>
+    <color name="dark_red_bg">#d53c58</color>
+    <color name="dark_red_bg_30">#BBd53c58</color>
+    <color name="disable_dark_red_bg">#30d53c58</color>
+    <color name="cancel_btn_txt">#d23e59</color>
+    <color name="purple_bg">#98739c</color>
+    <color name="dark_purple">#7c587e</color>
+    <color name="grey_color_txt">#919191</color>
+    <color name="my_account_line_color">#b1b2b4</color>
+    <color name="white_light">#fffffa</color>
+    <color name="white_transparent">#B3ffffff</color>
+    <color name="link_color_blue_light">#6966ec</color>
+
+    <color name="roboto_calendar_month_font">#2A99BC</color>
+    <color name="roboto_calendar_current_day_ring">#e6e7e8</color>
+    <color name="roboto_calendar_day_of_the_month_font">#849ba9</color>
+    <color name="roboto_calendar_circle_1">#e98885</color>
+    <color name="roboto_calendar_circle_2">#55c6da</color>
+    <color name="shopping_cart_border">#cacbcb</color>
+    <color name="tab_layout_divider">#b22b44</color>
+    <color name="light_red">#d53c58</color>
+    <color name="dark_red">#b00d1e</color>
+    <color name="product_listing_text">#d8536b</color>
+    <color name="address_layout_bg">#efeaf0</color>
+    <color name="dark_green_layout">#56b1ac</color>
+    <color name="nature_green">#92d241</color>
+    <color name="light_purple">#aa97ab</color>
+    <color name="red_line_color">#a1243a</color>
+    <color name="login_edit_text_bg">#D9e2fafa</color>
+    <color name="dark_light_yellow">#efe08d</color>
+
+    <color name="yello_trm">#F9F1C0</color>
+
+    <color name="ultraLightGray_UltraLowlight">#dadada</color>
+    <color name="lightGray">#7A7A7A</color>
+    <color name="green">#64911c</color>
+
+    <color name="divider_colorsild">#6ec4bf</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+</resources>

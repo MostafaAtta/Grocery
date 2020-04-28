@@ -1,0 +1,112 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+android {
+    compileSdkVersion 29
+
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 27
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = 1.8
+    }
+    buildToolsVersion = '29.0.1'
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    testImplementation 'junit:junit:4.13'
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+signing {
+    required { gradle.taskGraph.hasTask("uploadArchives") }
+    sign configurations.archives
+}
+
+def getReleaseRepositoryUrl() {
+    return hasProperty('RELEASE_REPOSITORY_URL') ? RELEASE_REPOSITORY_URL
+            : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+}
+
+def getSnapshotRepositoryUrl() {
+    return hasProperty('SNAPSHOT_REPOSITORY_URL') ? SNAPSHOT_REPOSITORY_URL
+            : "https://oss.sonatype.org/content/repositories/snapshots/"
+}
+
+def getRepositoryUsername() {
+    return hasProperty('sonatypeUsername') ? sonatypeUsername : ""
+}
+
+def getRepositoryPassword() {
+    return hasProperty('sonatypePassword') ? sonatypePassword : ""
+}
+
+/*uploadArchives {
+    repositories.mavenDeployer {
+        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+        repository(url: getReleaseRepositoryUrl()) {
+            authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+        }
+
+        snapshotRepository(url: getSnapshotRepositoryUrl()) {
+            authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+        }
+
+        pom.groupId = GROUP
+        pom.version = version
+        pom.artifactId = POM_ARTIFACT_ID
+
+        pom {
+            project {
+                name POM_NAME
+                packaging POM_PACKAGING
+                description POM_DESCRIPTION
+                url POM_URL
+
+                scm {
+                    url POM_SCM_URL
+                    connection POM_SCM_CONNECTION
+                    developerConnection POM_SCM_DEV_CONNECTION
+                }
+
+                licenses {
+                    license {
+                        name POM_LICENCE_NAME
+                        url POM_LICENCE_URL
+                        distribution POM_LICENCE_DIST
+                    }
+                }
+
+                developers {
+                    developer {
+                        id POM_DEVELOPER_ID
+                        name POM_DEVELOPER_NAME
+                        email POM_DEVELOPER_EMAIL
+                    }
+                }
+
+            }
+        }
+    }
+}*/
+

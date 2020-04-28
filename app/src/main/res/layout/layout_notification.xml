@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/base_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/white_layout_bg"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dp"
+                android:text="@string/allow_notifications"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp18" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/notifications_btn_allow_notifications"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/white_layout_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_layout_bg"
+                android:padding="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:text="@string/out_for_delivery"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp18" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/notifications_btn_out_for_delivery"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_layout_bg"
+                android:padding="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:text="@string/delivered"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp18" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/notifications_btn_delivered"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_layout_bg"
+                android:padding="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:text="@string/offers"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp18" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/notifications_btn_offers"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_layout_bg"
+                android:padding="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="3dp"
+                    android:text="@string/notify_me"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp18" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/notifications_btn_notify_me"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <thegroceryshop.com.custom.loader.LoaderLayout
+        android:id="@+id/notifications_lyt_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loader_layout_progress_color="@color/red_line_color" />
+</LinearLayout>

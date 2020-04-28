@@ -1,0 +1,10 @@
+<resources>
+
+
+    <dimen name="textsold_out">12dp</dimen>
+    <dimen name="text_nrml">18sp</dimen>
+    <dimen name="text_sub_nrml">14sp</dimen>
+    <dimen name="text_small">13dp</dimen>
+    <dimen name="grid_spacing">20dp</dimen>
+
+</resources>

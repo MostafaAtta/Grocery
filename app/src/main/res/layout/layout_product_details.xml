@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayColorBackground"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp15"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_address"
+                    android:textColor="@color/purple_bg"
+                    android:textSize="@dimen/text_dp15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="16 Baghdad St., Cairo - Egypt"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Floor 5"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Flat # 8"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+20 100 897 4778"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/DARK_GRAY_TXT_COLOR" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_time"
+                    android:textColor="@color/purple_bg"
+                    android:textSize="@dimen/text_dp15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="Monday,10 March"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="From 5pm to 7pm"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/DARK_GRAY_TXT_COLOR" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_method"
+                    android:textAllCaps="true"
+                    android:textColor="@color/purple_bg"
+                    android:textSize="@dimen/text_dp15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="@string/credit_card"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Card Number: xxxx - xxxx - xxxx - 1234"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/DARK_GRAY_TXT_COLOR" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp15"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment_information"
+                    android:textColor="@color/purple_bg"
+                    android:textSize="@dimen/text_dp15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="Subtotal: 50 L.E"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Fee: 20 L.E"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount: 70 L.E"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Products Number: 14"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/DARK_GRAY_TXT_COLOR" />
+            <LinearLayout
+                android:id="@+id/mCheckoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:id="@+id/textViewCheckOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/delivery_boy_information"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp18"
+                    android:textStyle="bold" />
+                <!--   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/dp10"
+                       android:gravity="center"
+                       android:text="@string/need_help_email_us"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/text_dp15"
+                       android:textStyle="bold"
+                       android:id="@+id/textView3" />-->
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALI MOHAMMED"
+                android:textColor="@color/purple_bg"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                android:textSize="@dimen/text_dp15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:text="Contact Number: +20 100 0909 889"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@color/dark_red_bg">
+
+                <TextView
+                    android:id="@+id/textViewTack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/track_order"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp18"
+                    android:textStyle="bold" />
+                <!--   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/dp10"
+                       android:gravity="center"
+                       android:text="@string/need_help_email_us"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/text_dp15"
+                       android:textStyle="bold"
+                       android:id="@+id/textView3" />-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/purple_bg">
+
+                <TextView
+                    android:id="@+id/textViewEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/edit_order"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp18"
+                    android:textStyle="bold" />
+                <!--   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/dp10"
+                       android:gravity="center"
+                       android:text="@string/need_help_email_us"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/text_dp15"
+                       android:textStyle="bold"
+                       android:id="@+id/textView3" />-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:id="@+id/textViewCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/cancel_order"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp18"
+                    android:textStyle="bold" />
+                <!--   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/dp10"
+                       android:gravity="center"
+                       android:text="@string/need_help_email_us"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/text_dp15"
+                       android:textStyle="bold"
+                       android:id="@+id/textView3" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

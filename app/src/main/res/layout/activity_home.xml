@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <thegroceryshop.com.custom.loader.LoaderLayout
+        android:id="@+id/home_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:loader_layout_progress_color="@color/red_line_color">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <thegroceryshop.com.custom.loader.LoaderLayout
+                        android:id="@+id/loader_welcome_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:loader_layout_progress_color="@color/red_line_color">
+
+                        <thegroceryshop.com.custom.AspectRatioImageView
+                            android:id="@+id/home_img_welcome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ariv_heightRatio="1"
+                            app:ariv_widthRatio="2" />
+
+                    </thegroceryshop.com.custom.loader.LoaderLayout>
+
+                    <thegroceryshop.com.custom.RippleButton
+                        android:id="@+id/home_btn_get_started"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="@dimen/dp15"
+                        android:background="@drawable/red_btn_selector"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp15"
+                        android:paddingRight="@dimen/dp15"
+                        android:text="@string/get_started"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/home_lyt_promotions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/white">
+
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/home_lyt_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:visibility="gone"
+                        app:auto_cycle="true"
+                        app:indicator_visibility="visible"
+                        app:pager_animation="Default" />
+
+                    <thegroceryshop.com.custom.AspectRatioImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        app:ariv_heightRatio="1"
+                        app:ariv_widthRatio="2" />
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/home_pager_promotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <thegroceryshop.com.custom.circleIndicator.CirclePageIndicator
+                        android:id="@+id/home_lyt_promotion_indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/dp5"
+                        android:padding="@dimen/dp2"
+                        app:fillColor="@color/colorPrimaryDark"
+                        app:strokeColor="@color/search_bg"
+                        app:strokeWidth="@dimen/dp1" />
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_recyl_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </thegroceryshop.com.custom.loader.LoaderLayout>
+</LinearLayout>

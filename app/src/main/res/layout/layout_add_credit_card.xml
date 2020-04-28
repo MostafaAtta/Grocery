@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:text="@string/enter_credit_card_details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="@string/credit_card_terms"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="@string/name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp14"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/meditTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/loginEdtSize"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/purple_selector"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/editPaddingLeft"
+                    android:paddingRight="@dimen/editPaddingLeft"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/edtLoginTextSize"
+                    android:translationY="@dimen/TEXT_INPUT_BOTTOM" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="@string/credit_card_number"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp14"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/meditTextCreditCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/loginEdtSize"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/purple_selector"
+                    android:digits="0123456789-"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/credit_card_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/editPaddingLeft"
+                    android:paddingRight="@dimen/editPaddingLeft"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/edtLoginTextSize"
+                    android:translationY="@dimen/TEXT_INPUT_BOTTOM" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/login_edt_margin"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text="@string/month"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_dp14"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/meditTextMM"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/loginEdtSize"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/margin_bottom_edittext"
+                            android:background="@drawable/purple_selector"
+                            android:digits="0123456789"
+                            android:hint="@string/mm"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/editPaddingLeft"
+                            android:paddingRight="@dimen/editPaddingLeft"
+                            android:singleLine="true"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/hintColor"
+                            android:textSize="@dimen/edtLoginTextSize"
+                            android:translationY="@dimen/TEXT_INPUT_BOTTOM" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text="@string/year"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_dp14"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/meditTextYY"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/loginEdtSize"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/margin_bottom_edittext"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:layout_marginTop="@dimen/edtDifferenceTop"
+                            android:background="@drawable/purple_selector"
+                            android:digits="0123456789"
+                            android:hint="@string/yyyy"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/editPaddingLeft"
+                            android:paddingRight="@dimen/editPaddingLeft"
+                            android:singleLine="true"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/hintColor"
+                            android:textSize="@dimen/edtLoginTextSize"
+                            android:translationY="@dimen/TEXT_INPUT_BOTTOM" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/login_edt_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text="@string/month"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_dp14"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/add_card_spinner_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/loginEdtSize"
+                            android:layout_marginBottom="@dimen/margin_bottom_edittext"
+                            android:layout_marginTop="@dimen/dp1"
+                            android:background="@drawable/purple_selector" />
+
+
+                        <!--<EditText
+                            android:id="@+id/meditTextMM"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/loginEdtSize"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/margin_bottom_edittext"
+                            android:background="@drawable/purple_selector"
+                            android:digits="0123456789"
+                            android:hint="@string/mm"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/editPaddingLeft"
+                            android:paddingRight="@dimen/editPaddingLeft"
+                            android:singleLine="true"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/hintColor"
+                            android:textSize="@dimen/edtLoginTextSize"
+                            android:translationY="@dimen/TEXT_INPUT_BOTTOM" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text="@string/year"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_dp14"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/add_card_spinner_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/loginEdtSize"
+                            android:layout_marginBottom="@dimen/margin_bottom_edittext"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:layout_marginTop="@dimen/dp1"
+                            android:background="@drawable/purple_selector" />
+
+                        <!--<EditText
+                            android:id="@+id/meditTextYY"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/loginEdtSize"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/margin_bottom_edittext"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:layout_marginTop="@dimen/edtDifferenceTop"
+                            android:background="@drawable/purple_selector"
+                            android:digits="0123456789"
+                            android:hint="@string/yyyy"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/editPaddingLeft"
+                            android:paddingRight="@dimen/editPaddingLeft"
+                            android:singleLine="true"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/hintColor"
+                            android:textSize="@dimen/edtLoginTextSize"
+                            android:translationY="@dimen/TEXT_INPUT_BOTTOM" />-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:text="@string/cvv"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_dp14"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/mEditTextCVV"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/loginEdtSize"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/margin_bottom_edittext"
+                            android:background="@drawable/purple_selector"
+                            android:digits="0123456789"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="center_vertical|left"
+                            android:hint="@string/cvv"
+                            android:imeOptions="actionDone"
+                            android:inputType="number|numberPassword"
+                            android:maxLength="3"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/editPaddingLeft"
+                            android:paddingRight="@dimen/editPaddingLeft"
+                            android:singleLine="true"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/hintColor"
+                            android:textSize="@dimen/edtLoginTextSize"
+                            android:translationY="@dimen/TEXT_INPUT_BOTTOM" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/loginEdtSize"
+                        android:layout_marginLeft="@dimen/dp8"
+                        android:layout_marginTop="21dp"
+                        android:layout_weight="7"
+                        android:digits="0123456789"
+                        android:gravity="center_vertical"
+                        android:text="@string/cvv_note1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="11sp"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyt_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/mLinearLayoutTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/add_credit_check_terms"
+                            android:layout_width="@dimen/dp40"
+                            android:layout_height="@dimen/dp40"
+                            android:layout_gravity="center"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/checkbox_selector"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dp10" />
+
+                        <TextView
+                            android:id="@+id/add_credit_text_terms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="@string/checkbox_text"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/dp12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp8"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/dp10" />
+
+                        <TextView
+                            android:id="@+id/mtextViewTerms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Terms of Use."
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/terms_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <thegroceryshop.com.custom.RippleButton
+                    android:id="@+id/mRippleButtonAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_edt_height"
+                    android:layout_marginTop="@dimen/btnMarginTop"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/normal"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/dp8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/powered_by"
+                        android:textColor="@color/white" />
+
+                    <thegroceryshop.com.custom.AspectRatioImageView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp2"
+                        android:src="@drawable/icon_paymob"
+                        app:ariv_heightRatio="1"
+                        app:ariv_widthRatio="4" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

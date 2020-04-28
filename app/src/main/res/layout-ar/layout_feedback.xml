@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/base_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="@string/i_like_to_feedback"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp16"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/editTextListName"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/purple_edittext_bg"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/dp6"
+                android:text="@string/select_an_option"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edt_txt_color"
+                android:textSize="@dimen/text_dp14"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp3"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/purple_edittext_bg"
+                android:padding="@dimen/dp10"
+                android:src="@mipmap/below_arrow_icon" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="center"
+            android:text="@string/enter_your_feedback"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp16"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextList"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp15"
+            android:background="@drawable/purple_edittext_bg"
+            android:gravity="right"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:paddingRight="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edt_txt_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mCheckoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/textViewCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18"
+            android:textStyle="bold" />
+        <!--   <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/dp10"
+               android:gravity="center"
+               android:text="@string/need_help_email_us"
+               android:textColor="@color/black"
+               android:textSize="@dimen/text_dp15"
+               android:textStyle="bold"
+               android:id="@+id/textView3" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

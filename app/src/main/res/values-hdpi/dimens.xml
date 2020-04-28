@@ -1,0 +1,61 @@
+<resources>
+
+
+    <!--app_intro screen-->
+    <dimen name="TEXT_INPUT_BOTTOM">2dp</dimen>
+
+    <!--Register screen-->
+    <dimen name="login_edt_height">38dp</dimen>
+
+    <!--Verify Email screen-->
+
+    <!--Change Email screen-->
+
+    <!--Add Occupation screen-->
+
+    <!--Delete my account screen-->
+
+    <!--Edit group admin only screen-->
+
+
+    <!--toolbar views dimens-->
+
+
+    <!-- Regitration page -->
+    <dimen name="margin_bottom_edittext">5dp</dimen>
+
+    <!--Password Recovery-->
+
+    <!--Login Screen Dimens _H-->
+
+
+    <dimen name="loginEdtSize">40dp</dimen>
+    <dimen name="edtDifferenceTop">0dp</dimen>
+    <dimen name="editPaddingLeft">10dp</dimen>
+    <dimen name="edtLoginTextSize">13dp</dimen>
+
+    <dimen name="btnTextSize">16dp</dimen>
+    <dimen name="btnHeight">40dp</dimen>
+    <dimen name="btnMarginTop">22dp</dimen>
+
+
+    <!--Getting Started-->
+
+
+    <!-- Education -->
+    <!-- <dimen name="getting_btnMarginTop">25dp</dimen>
+    <dimen name="getting_MarginTop">5dp</dimen>
+    <dimen name="desc_text_size">12dp</dimen>
+    <dimen name="margin_right_left_editText">10dp</dimen>
+    <dimen name="descnote_text_size">8dp</dimen>-->
+
+    <!--occupation-->
+    <dimen name="change_email_text">14sp</dimen>
+
+
+    <!--Edit Profile-->
+
+    <dimen name="login_edt_margin">5dp</dimen>
+    <dimen name="terms_text_size">11sp</dimen>
+    <dimen name="grid_spacing">8dp</dimen>
+</resources>

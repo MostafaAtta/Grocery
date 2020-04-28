@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_pop_up_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_with_right_side_missing"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/lyt_brand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:gravity="center_vertical|left"
+                android:text="@string/brand"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_dp13" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/filter_brand_img_close"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:padding="@dimen/dp6"
+            android:src="@drawable/img_close_dark" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/lyt_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:gravity="center_vertical|left"
+                android:text="@string/pricee"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_dp13" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/filter_price_img_close"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:padding="@dimen/dp6"
+            android:src="@drawable/img_close_dark"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/lyt_origin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:gravity="center_vertical|left"
+                android:text="@string/origin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_dp13" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/filter_origin_img_close"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:padding="@dimen/dp6"
+            android:src="@drawable/img_close_dark"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_lifestyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp45"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp45"
+            android:layout_toLeftOf="@+id/filter_lifestyle_img_close"
+            android:orientation="horizontal">
+
+            <me.grantland.widget.AutofitTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp8"
+                android:gravity="center_vertical|left"
+                android:text="@string/lifestyle_benefits"
+                android:textColor="@color/black"
+                app:minTextSize="@dimen/text_dp10"
+                android:textSize="@dimen/text_dp13" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/filter_lifestyle_img_close"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:padding="@dimen/dp6"
+            android:visibility="gone"
+            android:src="@drawable/img_close_dark" />
+    </RelativeLayout>
+</LinearLayout>

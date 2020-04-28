@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        app:cardCornerRadius="@dimen/dp5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginBottom="@dimen/dp5">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/img_bottle" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayColorBackground" />
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginBottom="@dimen/dp5">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/img_bottle" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayColorBackground" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginBottom="@dimen/dp5">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/img_bottle" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="@color/grayColorBackground" />
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginBottom="@dimen/dp5">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/img_bottle" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:background="@color/grayColorBackground" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtWishListName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:maxLines="2"
+                            android:minLines="1"
+                            android:text="@string/my_list"
+                            android:textAllCaps="true"
+                            android:textColor="@color/purple_bg"
+                            android:textSize="@dimen/text_dp16"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgViewMenu"
+                            android:layout_width="35dp"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:padding="5dp"
+                            android:src="@mipmap/menu_icon"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtWeeklyList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:maxLines="4"
+                        android:text="@string/wishlist_description_text"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_dp13" />
+
+                    <thegroceryshop.com.custom.RippleButton
+                        android:id="@+id/btnAddToCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/dark_red_layout_bg_no_curve"
+                        android:gravity="center"
+                        android:padding="@dimen/dp8"
+                        android:text="@string/add_to_cart_caps"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_dp11"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtProductCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start"
+                        android:gravity="bottom"
+                        android:paddingBottom="8dp"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_dp13" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:background="@color/gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/white"
+                    android:text="@string/region"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:text=" : "/>
+
+                <TextView
+                    android:id="@+id/txtWishLisRegionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_disable"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#60888888" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

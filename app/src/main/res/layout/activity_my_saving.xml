@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_red_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:text="@string/life_time_saving"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp16"
+            android:textStyle="bold" />
+
+        <thegroceryshop.com.custom.loader.LoaderLayout
+            android:id="@+id/my_saving_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:loader_layout_progress_color="@color/light_yellow_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layoutDirection="ltr"
+                android:padding="@dimen/dp12">
+
+                <TextView
+                    android:id="@+id/textViewUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:gravity="center"
+                    android:text="@string/egp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp18"
+                    android:textStyle="bold" />
+
+                <thegroceryshop.com.custom.Pinview
+                    android:id="@+id/my_account_pinview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    app:forceKeyboard="false"
+                    app:password="false"
+                    app:pinBackground="@drawable/light_yellow_edittext_bg"
+                    app:pinHeight="@dimen/dp40"
+                    app:pinLength="1"
+                    app:pinWidth="@dimen/dp35" />
+
+            </LinearLayout>
+        </thegroceryshop.com.custom.loader.LoaderLayout>
+    </LinearLayout>
+
+    <thegroceryshop.com.custom.loader.LoaderLayout
+        android:id="@+id/loaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp8"
+        android:paddingEnd="@dimen/dp8"
+        android:paddingStart="@dimen/dp8">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSaving"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </thegroceryshop.com.custom.loader.LoaderLayout>
+</LinearLayout>

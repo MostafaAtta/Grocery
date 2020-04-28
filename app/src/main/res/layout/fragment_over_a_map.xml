@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        android:elevation="@dimen/dp5">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/edtTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp45"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/search_address"
+            android:inputType="text"
+            android:textSize="@dimen/text_dp14"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingLeft="@dimen/dp6"
+            android:paddingRight="@dimen/dp6" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/img_close_dark" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/no_area_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:padding="@dimen/dp15"
+        android:text="@string/our_services_not_avaliable"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:textSize="@dimen/dp12"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/map_pin" />
+
+    <ImageView
+        android:id="@+id/myLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/frameLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/frameLayout"
+        android:layout_marginBottom="68dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/my_location" />
+
+</RelativeLayout>

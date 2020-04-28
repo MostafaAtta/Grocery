@@ -1,0 +1,663 @@
+<resources>
+    <string name="app_name">The Grocery Shop</string>
+
+    <string name="fb_login_protocol_scheme" translatable="false">fb1310012239090955</string>
+    <string name="facebook_app_id" translatable="false">1310012239090955</string>
+
+    <!-- Login Screen-->
+    <string name="login">Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password_simple">Forgot Password?</string>
+    <string name="signup_simple">SIGN UP</string>
+    <string name="or">OR</string>
+    <string name="need_help_caps">NEED HELP?</string>
+    <string name="need_help_email_us">Need Help? <u>Email US</u></string>
+
+    <!--  Shopping Cart Screen-->
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="bar_code_txt">BarCode Scanner</string>
+    <string name="checkout_caps">CHECKOUT</string>
+    <string name="total_ammount">Total Amount</string>
+    <string name="total_items">Total Items</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="coupon">Promo Discount</string>
+    <string name="have_promo_code">Have a promo code?</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="tax_charges">Tax Charges</string>
+    <string name="total_savings">Total Savings</string>
+    <string name="tax">Tax :</string>
+    <string name="price">Price :</string>
+    <string name="saved">Savings :</string>
+
+    <!-- Register Screen-->
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="business_email">Business Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="business_name">Business Name</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="business_address">Business Address</string>
+    <string name="business_address_city">Business Address City</string>
+
+    <string name="referral_code">Referral Code (Optional)</string>
+    <string name="business_user">BUSINESS USER</string>
+    <string name="terms_and_conditions" formatted="false">
+        <![CDATA[<font color=\'#FFFFFF\'>I agree to </font><font color=\'#F9F1C0\'>Terms of Use</font><font color=\'#FFFFFF\'> & </font><font color=\'#F9F1C0\'>Privacy Policy</font>]]>
+    </string>
+
+    <string name="loading">Loading</string>
+
+    <!--Forgot Password-->
+    <string name="forgot_password">Forgot Password</string>
+    <string name="submit_caps">SUBMIT</string>
+
+    <string name="confirm_caps">CONFIRM</string>
+    <string name="otp_text">all_field_correctly sent a 4-digit \nConfirmation code via sms to</string>
+    <!--Validation Util-->
+    <string name="error_blank_username">Username is required.</string>
+    <string name="error_blank_field">Please fill the field.</string>
+
+    <string name="error_invalid_international_number">Contact number length must be between 6 to 15.</string>
+    <string name="error_invalid_short_phone">The mobile number is too short, length must be at least 5.</string>
+    <string name="error_invalid_long_phone">The mobile number length must not exceed 15 digits.</string>
+    <string name="error_invalid_login_id">Invalid login Id</string>
+    <string name="error_blank_phone">Please enter your mobile no.</string>
+    <string name="error_blank_password">Please enter password to proceed.</string>
+    <string name="all_field_correctly">Please fill all fields correctly.</string>
+    <string name="error_blank_zip_code">Please enter the zip code to proceed.</string>
+    <string name="error_blank_date_of_birth">Please enter Date of Birth.</string>
+    <string name="error_blank_name_of_user">Please enter the name.</string>
+    <string name="error_blank_first_name_of_user">Please enter the first name.</string>
+    <string name="error_blank_last_name_of_user">Please enter the last name.</string>
+    <string name="error_blank_user_name_of_user">Please enter the user name.</string>
+    <string name="some_error_occoured">Some error occurred.</string>
+
+    <string name="error_short_name_of_user">The name is too short, length must be at least 3.</string>
+    <string name="error_short_user_name_of_user">The user name is too short, length must be at least 6.</string>
+    <string name="error_short_first_name_of_user">The first name is too short, length must be at least 3.</string>
+    <string name="error_short_last_name_of_user">The last name is too short, length must be at least 3.</string>
+    <string name="error_long_name_of_user">The Name length must not exceed 50 characters.</string>
+    <string name="error_long_user_name_of_user">The User Name length must not exceed 50 characters.</string>
+    <string name="error_long_first_name_of_user">The First Name length must not exceed 50 characters.</string>
+    <string name="error_long_last_name_of_user">The LastName length must not exceed 50 characters.</string>
+    <string name="err_short_password">Password must be between 6 and 20 characters long.</string>
+    <string name="err_short_newpassword">New Password must be between 6 and 20 characters long.</string>
+    <string name="err_short_retypepassword">Confirm Password must be between 6 and 20 characters long.</string>
+    <string name="error_internet_connection">Sorry, no internet connectivity detected.\nPlease reconnect and try again.</string>
+    <string name="err_long_password">Password must be between 6 and 20 characters long.</string>
+    <string name="err_password">Password must have atleast one numeric digit, one letter.</string>
+    <string name="error_blank_cnfm_password">Please enter confirm password.</string>
+    <string name="err_cnfm_password_not_match">Retyped password does not match new password.</string>
+    <string name="err_cnfm_password_not_match1">Confirm password does not match password.</string>
+    <string name="date_of_birth">Date of Birth (Optional)</string>
+
+    <!--strings related to internet connector-->
+    <string name="ok">OK</string>
+
+    <string name="error_blank_email">Please enter your email address.</string>
+
+    <string name="error_invalid_email">Please enter a valid email address.</string>
+    <string name="countries">Countries</string>
+    <string name="name_code">COUNTRY NAME/CODE</string>
+    <string name="title_activity_home_drawer">Home</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- HomeScreen-->
+    <string name="search">Search</string>
+
+    <!-- Create New List-->
+    <string name="create_new_list_caps">CREATE NEW LIST</string>
+    <string name="cancel_caps">CANCEL</string>
+    <string name="list_name_caps">LIST NAME</string>
+    <string name="list_description_caps">LIST DESCRIPTION</string>
+    <string name="done_caps">DONE</string>
+
+    <!-- My Account-->
+    <string name="you_saved_luggage">You have saved yourself from carrying home</string>
+    <string name="kg_caps">KG</string>
+    <string name="account_details">Account Details</string>
+    <string name="store_credits_caps">STORE CREDITS</string>
+    <string name="order_history">Order History</string>
+    <string name="faqs">FAQs</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="help_caps">HELP</string>
+    <string name="rate">RATE</string>
+    <string name="add_comment">ADD A COMMENT</string>
+    <string name="start_typing">start typing here...</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="logout_question">Logout?</string>
+    <string name="savings">Savings</string>
+    <string name="language">Language</string>
+    <string name="tgs_point">TGS Points</string>
+    <string name="tgs_credit">TGS Credit</string>
+    <string name="my_coupons">My Coupons</string>
+    <string name="manage_my_recurring_order">Manage My Recurring Orders</string>
+    <string name="logout_warning">Are you sure you want to logout?</string>
+    <string name="notifications">Notifications</string>
+    <string name="system_notifications">System Notifications</string>
+
+
+    <!-- Order Completed-->
+    <string name="order_completed_caps">ORDER COMPLETED</string>
+    <string name="rating_and_review">RATING &amp; REVIEW</string>
+    <string name="review_caps">REVIEW</string>
+
+    <!-- Store Credited-->
+    <string name="your_credited_balance_caps">YOUR CREDITED BALANCE</string>
+    <string name="egp">EGP</string>
+    <string name="invite_a_friend">INVITE A FRIEND &amp; EARN CREDITS</string>
+
+    <!-- Earn Points-->
+    <string name="total_earn_points">TOTAL EARNED POINTS</string>
+    <string name="earned_points">EARNED POINTS</string>
+    <string name="earn_loyalty_points">EARNED LOYALTY POINTS</string>
+    <string name="earn_referral_points">EARNED REFRAL POINTS</string>
+    <string name="redeemed_points">REDEEMED POINTS</string>
+    <string name="current_available_points">CURRENT AVAILABLE POINTS</string>
+    <string name="convert_points">CONVERT POINTS</string>
+    <string name="convert">CONVERT</string>
+
+    <!-- My Saving-->
+    <string name="life_time_saving">LIFE TIME SAVING</string>
+    <string name="order_id">Order ID:</string>
+    <string name="saved_caps">SAVED</string>
+    <string name="my_saving">MY SAVING</string>
+
+    <!-- Saved kilos-->
+    <string name="saved_yourself_from_lugging">SAVED YOURSELF FROM LUGGING</string>
+    <string name="lugging">LUGGING</string>
+    <string name="saved_kilos_caps">SAVED KILOS</string>
+
+    <!-- Feedback-->
+    <string name="i_like_to_feedback">I\' D LIKE TO FEEDBACK ABOUT:</string>
+    <string name="select_an_option">SELECT AN OPTION</string>
+    <string name="enter_your_feedback">ENTER YOUR FEEDBACK</string>
+    <string name="feedback">Feedback</string>
+
+    <!-- About-->
+    <string name="version_number">Version Number</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="licences">Licences</string>
+
+    <!-- Contact Us-->
+    <string name="how_can_we_help">HOW CAN WE HELP</string>
+    <string name="call_us_caps">CALL US</string>
+    <string name="or_email_us">OR\n\nEMAIL US</string>
+    <string name="or_email_us1">\n\nor email us on</string>
+
+    <!-- Product Details-->
+    <string name="product_details">PRODUCT DETAILS</string>
+    <string name="delivery_address">DELIVERY ADDRESS</string>
+    <string name="delivery_time">DELIVERY TIME</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="payment_information">PAYMENT INFORMATION</string>
+    <string name="delivery_boy_information">ORDER CAPTAIN INFORMATION</string>
+    <string name="track_order">TRACK ORDER</string>
+    <string name="edit_order">EDIT ORDER</string>
+    <string name="cancel_order">CANCEL ORDER</string>
+    <string name="credit_card">Credit Card</string>
+
+    <!-- Create New List-->
+    <string name="add_to_list">ADD TO LIST</string>
+
+    <!-- Schedule Delivery-->
+    <string name="select_slot_to_receive">SELECT SLOT TO RECEIVE YOUR ORDER</string>
+    <string name="please_tap_on_the_day">Please tap on the day and time which you need your scheduled order to be delivered</string>
+
+    <!--Add New Address-->
+    <string name="manually_caps">MANUALLY</string>
+    <string name="over_a_map_caps">OVER A MAP</string>
+    <string name="add_new_address">ADD NEW ADDRESS</string>
+    <string name="add_caps">ADD</string>
+    <string name="enter_your_postal_code">ENTER NEW ADDRESS NAME</string>
+    <string name="floor">Floor</string>
+    <string name="unit">Apt number</string>
+    <string name="building_name">BUILDING/VILLA NUMBER (Optional)</string>
+    <string name="address_specific_insturucation">ADDRESS INSTRUCTIONS (Optional)</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--Review Order-->
+    <string name="place_order">PLACE ORDER</string>
+    <string name="product_list">PRODUCT LIST</string>
+    <string name="edit">EDIT</string>
+    <string name="review_order1">REVIEW YOUR ORDER</string>
+
+    <!--Product Listing-->
+    <string name="see">SEE</string>
+    <string name="all">ALL</string>
+    <string name="sort_by">SORT BY</string>
+    <string name="popularity">Popularity</string>
+    <string name="filter_by">FILTER BY</string>
+    <string name="filter">Filter</string>
+    <string name="add_to_cart_caps">ADD TO CART</string>
+
+    <!--Select your address-->
+    <string name="just_for_this_order">JUST FOR THIS ORDER</string>
+    <string name="special_instructions">SPECIAL INSTRUCTION</string>
+    <string name="special_instructions_text">E.g: Please call my contact number instead of pressing the doorbell when you arrive.</string>
+    <string name="leave_at_this_doorstep">Leave this order at my doorstep without contacting me?</string>
+    <string name="just_for_this_order_text">I bear the risk of such unattended delivery and accept all liability and risk of loss, theft and damage.</string>
+    <string name="delivery_timing">DELIVERY TIMING</string>
+
+    <!--My Orders-->
+    <string name="my_orders">My Orders</string>
+    <string name="current_orders">CURRENT ORDERS</string>
+    <string name="completed_orders">COMPLETED ORDERS</string>
+
+    <!--My Coupons-->
+    <string name="received">Received</string>
+    <string name="redeemed">Redeemed</string>
+    <string name="unredeemed">UNREDEEMED</string>
+
+    <!--Product More Details -->
+    <string name="save_to_list">SAVE TO LIST</string>
+    <string name="about_the_product">ABOUT PRODUCT</string>
+    <string name="same_brand">SAME BRAND</string>
+    <string name="similar_products">SIMILAR PRODUCTS</string>
+
+    <!--Payment Methods -->
+    <string name="card_number">Card Number</string>
+    <string name="cod">CASH</string>
+    <string name="apply">APPLY</string>
+
+    <!--Delivery Date and Time -->
+    <string name="delivery_type">DELIVERY TYPE</string>
+    <string name="normal">NORMAL</string>
+    <string name="scheduled">SCHEDULED</string>
+    <string name="express">EXPRESS</string>
+    <string name="delivery_date_and_time">DELIVERY DATE &amp; TIME</string>
+    <string name="select_delivery_date_and_time">PLEASE SELECT \nDELIVERY TYPE OF YOUR \nORDER</string>
+
+    <string name="having_problem_with">Having problem while logging in \nor signing up?</string>
+
+    <!--Account Details-->
+    <string name="personal_information">PERSONAL INFORMATION</string>
+    <string name="update_password">UPDATE PASSWORD</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="retype_new_password">Retype New Password</string>
+    <string name="manage_address">MANAGE ADDRESS</string>
+    <string name="new_password_error">Please enter new password.</string>
+    <string name="retype_password_error">Please enter confirm password.</string>
+
+    <!--Select Language-->
+    <string name="current_language">CURRENT LANGUAGE</string>
+    <string name="change_language">CHANGE LANGUAGE</string>
+    <string name="select">Select</string>
+
+    <!--Notifications-->
+    <string name="allow_notifications">Allow Notifications</string>
+    <string name="out_for_delivery">Out for Delivery</string>
+    <string name="delivered">Delivered</string>
+    <string name="offers">Offers</string>
+    <string name="notify_me">Notify Me</string>
+
+    <!--FAQ-->
+    <string name="delivery">Delivery</string>
+    <string name="payment">Payment</string>
+    <string name="orders">Orders</string>
+    <string name="using_our_web_and_app">Using Our Website &amp; Mobile Apps</string>
+    <string name="products">Products</string>
+    <string name="about_tgs">About TGS</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+
+
+    <string name="select_caps">SELECT</string>
+    <string name="delete_caps">DELETE</string>
+    <string name="add_card">Add Card</string>
+    <string name="cards_list">Cards List</string>
+
+    <string name="need_permission" translatable="false">Need Permissions</string>
+    <string name="msg" translatable="false">This app needs the Overlay permission.</string>
+    <string name="multiple_title">Need Multiple Permissions</string>
+    <string name="msg_txt">This app needs Phone, Camera and Location permissions.</string>
+    <string name="grant_txt">Grant</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="error_invalid_phone">Please enter only digits in Phone no.</string>
+    <string name="error_invalid_number_for_country">Please enter valid phone no for your country.</string>
+    <string name="otp_error">Please enter valid OTP (One Time Password)</string>
+    <string name="otp_done">You have successfully verified your mobile number.</string>
+    <string name="error_short_mobile_no">Mobile number is too short, Please use a valid number.</string>
+    <string name="error_long_mobile_no">Mobile number is too long, Please use a valid number.</string>
+    <string name="mobile_no_error">Please enter valid mobile no. according to country code.</string>
+    <string name="product_added_to_cart">%1$s product added to cart</string>
+    <string name="product_removed_from_cart">1 product removed from cart</string>
+    <string name="to_free_delivery">%1$s to free delivery</string>
+    <string name="sold_out">Sold out</string>
+    <string name="shipping_in_n_hours">DELIVERY in %1$sH</string>
+    <string name="new_string">New</string>
+    <string name="on_sale">On Sale</string>
+    <string name="in_stock">In Stock</string>
+    <string name="bulk_orders">Bulk Orders</string>
+    <string name="recently_added">Recently Added</string>
+    <string name="price_low_to_high">Price (Low - High)</string>
+    <string name="price_high_to_low">Price (High - Low)</string>
+    <string name="brand_a_to_z">Brands (A-Z)</string>
+    <string name="brand_z_to_a">Brands (Z-A)</string>
+    <string name="origin">Origin</string>
+    <string name="lifestyle_benefits">Lifestyle/Benefits</string>
+    <string name="select_brand">Filter by Brands</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="multiple">Multiple</string>
+    <string name="brand">Brand</string>
+    <string name="pricee">Price</string>
+    <string name="off">off</string>
+    <string name="select_price_range">Filter by Price</string>
+    <string name="select_lifestyle_benefits">Filter by Lifestyle/Benefits</string>
+    <string name="you_are_eligble_for_shipping">You are now eligible for a free scheduled delivery.</string>
+    <string name="no_product_found">No product found.</string>
+    <string name="na">NA</string>
+    <string name="country">Country</string>
+    <string name="update_profile">UPDATE PROFILE</string>
+    <string name="manage_my_cards">Manage My Cards</string>
+    <string name="manage_shipping_address">Shipping Address</string>
+    <string name="select_your_address">Select Your Address</string>
+    <string name="proceed_to_checkout">Proceed To Checkout</string>
+    <string name="delete">delete</string>
+    <string name="remaining">%1$s Remaining</string>
+    <string name="menu">Menu</string>
+    <string name="back">Back</string>
+    <string name="do_you_want_to_login_into_OnlineMart">Please login to access this feature.</string>
+    <string name="address_delete_msg">Are you sure, you want to delete this shipping address?</string>
+    <string name="pls_select_a_shipping_address_to_proceed">Please select a shipping address to proceed.</string>
+    <string name="credit_card_number">Card Number</string>
+    <string name="name">Name</string>
+    <string name="mm">MM</string>
+    <string name="cvv">CVV</string>
+    <string name="yyyy">YY</string>
+    <string name="add">Add Card</string>
+    <string name="error_blank_name_of_card_holder">Please type name of card holder.</string>
+    <string name="checkbox_text">By adding your debit/credit card, you agree to the Terms of Use &amp; Privacy Policy.</string>
+
+    <!--Add Credit Card Screen-->
+    <string name="creditCardNumberEmpty">Credit card number is empty.</string>
+    <string name="creditCardMMEmpty">Credit card month is empty.</string>
+    <string name="creditCardYYEmpty">Credit card year is empty.</string>
+    <string name="creditCardCVVEmpty">Credit card cvv is empty.</string>
+    <string name="creditCardCVV_minLength">Credit card cvv should be 3 digits.</string>
+    <string name="please_accept_terms">Please review and agree to the terms of use and privacy policy to proceed.</string>
+    <string name="blank_contact_no">Please enter the contact number.</string>
+    <string name="time_slot_format">%1$s TO %2$s</string>
+    <string name="time_slot_format_from">From %1$s TO %2$s</string>
+    <string name="time_slot_format1">%1$s - %2$s</string>
+    <string name="no_slots_avalilable">No Slots available</string>
+    <string name="pls_select_a_delivery_time_slot">Please select a delivery time slot.</string>
+    <string name="pls_select_delivery_date_for_time_slots">Please select delivery date for time slots.</string>
+    <string name="pls_select_delivery_date_and_time_slot">Please first select a delivery date with available time slot.</string>
+    <string name="are_these_correct">Are these correct?</string>
+    <string name="dash">-----------------------------------------------------------------------------------------------------------------------------------</string>
+    <string name="delivery_feee">Delivery Fee</string>
+    <string name="review_shopping_cart">Review Shopping Cart</string>
+    <string name="change_payment_method">Change Payment Method</string>
+    <string name="time_format_on_summary">From %1$s TO %2$s</string>
+    <string name="get_started">Get Started</string>
+    <string name="cash_on_delivery">CASH</string>
+    <string name="search_product_here"> Search</string>
+    <string name="error_msg">We are facing some connection problems, Please try again later.</string>
+    <string name="no_current_orders_available">There is no current orders.</string>
+    <string name="no_completed_orders_available">There is no completed orders.</string>
+    <string name="date_colon">Date:</string>
+    <string name="time_colon">Time:</string>
+    <string name="no_of_items_colon">No of Items:</string>
+    <string name="no_of_items_colon1">No of Items :</string>
+    <string name="date_of_placing_order_colon">Date of placing order:</string>
+    <string name="order_type">Order Type:</string>
+    <string name="order_amount_colon">Order Amount:</string>
+    <string name="payment_method_colon">Payment Method:</string>
+    <string name="order_status_colon">Order Status:</string>
+    <string name="card">CARD</string>
+    <string name="acknowledge">Acknowledge</string>
+    <string name="picking">Picking</string>
+    <string name="picked">Picked</string>
+    <string name="packing">Packing</string>
+    <string name="packed">Packed</string>
+    <string name="in_transit">IN TRANSIT</string>
+    <string name="order_status">Order Status</string>
+    <string name="no_order_information_available">No order information available.</string>
+    <string name="order_captain_information">Order Captain Information</string>
+    <string name="order_cancel_confrmation">Do you want to cancel this order?</string>
+    <string name="order_detail">Order Details</string>
+    <string name="product_scan_title">BARCODE SCAN</string>
+    <string name="change_password">Change Password</string>
+    <string name="quantity_colon">Quantity :</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="my_account">My Account</string>
+    <string name="card_delete_confrmation">Do you want to delete this card?</string>
+    <string name="call_us_daily_from">Call us daily from 8:00 AM till 10:00 PM at</string>
+    <string name="no_shipping_address_added_yet">No shipping address added yet.</string>
+    <string name="no_saved_cards_available">No saved cards available.</string>
+    <string name="out_of_stock">Out of stock</string>
+    <string name="no_brand_list">No brand list available for the product list.</string>
+    <string name="no_origin_list">No origin available for the product list.</string>
+    <string name="no_tag_list">No lifestyle/benefit tags available for the product list.</string>
+    <string name="current_password_error">Please enter current password.</string>
+    <string name="title">THE GROCERY SHOP</string>
+    <string name="update_address">Update Address</string>
+    <string name="email_not_available">This email id is already registered with us.</string>
+    <string name="mobile_not_available">This mobile number is already registered with us.</string>
+    <string name="error_invaid_cvv">Please enter a CVV Code.</string>
+    <string name="error_invaid_cvv1">Please enter a valid 3 digit CVV Code.</string>
+    <string name="pls_select_payment">Please select a payment method.</string>
+    <string name="tax_changes_colon">Tax Charges :</string>
+    <string name="door_step_delivery">Door Step Delivery</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="scan_again">Scan again</string>
+    <string name="no_product_on_barcode">Sorry, we could not locate this barcode in our database.\nPlease scan another barcode.</string>
+    <string name="enter_credit_card_details">ENTER CREDIT CARD DETAILS</string>
+
+    <string name="credit_card_terms">
+        The Grocery Shop takes data security and the privacy of your personal information very seriously. We use a secure <b>256-bit AES</b> protocol to encrypt your payment and credit card information storage.
+    </string>
+    <string name="month">MONTH</string>
+    <string name="year">Year</string>
+    <string name="select_payment">SELECT DEFAULT PAYMENT METHOD</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="building_name_num">Building/Villa number :</string>
+    <string name="applicaion_tour">Application Tour</string>
+    <string name="payment_type_txt">Payment Type</string>
+    <string name="total_ammount_colon">Total Amount :</string>
+    <string name="delivery_fee_colon">Delivery Fee :</string>
+    <string name="sub_total_colon">Subtotal :</string>
+    <string name="coupon_colon">Promo Discount :</string>
+    <string name="keep_shoping">Keep Shopping</string>
+    <string name="welcome">WELCOME</string>
+    <string name="no_notification_available_for_you">No notification available for you.</string>
+    <string name="send_us_feedback">Send us feedback</string>
+    <string name="app_rate_us_message">How are you doing with The Grocery Shop, Would you like to rate us on Google Play Store.</string>
+    <string name="app_update_message">A new version of The Grocery Shop is available. Please update your app with the latest one.</string>
+    <string name="app_force_update_message">You are using an expired version of The Grocery Shop. Please update your app with the latest one to use it.</string>
+    <string name="later">Later</string>
+    <string name="update">Update</string>
+    <string name="rate_us">Rate us</string>
+    <string name="need_support_for_app">Need Support For app.</string>
+    <string name="select_origin">Filter by Origin</string>
+    <string name="max_quantity_reached_msg">Sorry, we only have %1$s available unit(s) in-stock of this product.</string>
+    <string name="max_quantity_reached_msg1">Sorry, we only have %1$s available unit(s) in-stock of %2$s.</string>
+    <string name="max_quantity_reached_msg2">Only have %1$s available unit(s) in-stock of %2$s.</string>
+    <string name="cvv_note1">CVV code is displayed on the back of your credit card.</string>
+    <string name="cvv_note">Please enter your 3 digit CVV code. This code is displayed on the back of your credit card.</string>
+    <string name="powered_by">Powered by</string>
+    <string name="enter_cvv">Enter CVV</string>
+    <string name="getting_location_data">Getting location address</string>
+    <string name="search_address">Search address</string>
+    <string name="eghome">e.g. Home</string>
+    <string name="save">Save</string>
+    <string name="processing_payment">Processing Payment...</string>
+    <string name="note_exress_delivery">Choosing Express as a delivery will charge you bit more, Do you want to proceed?</string>
+    <string name="no_express_timeslot">We don\’t have any available express delivery slots within the coming hour, please select Scheduled Delivery.</string>
+    <string name="i_agree">I Agree</string>
+    <string name="i_agree_tnc">I agree to Terms of Use &amp; Privacy Policy</string>
+    <string name="invalid_credential">We are not able to verify your payment request this time, Please  tyy again.</string>
+    <string name="all_prices_inclusive">All prices are inclusive of applicable taxes.</string>
+    <string name="confirm">Confirm</string>
+    <string name="ordering">Ordering</string>
+    <string name="registration_and_personal">Registration and personal info updates</string>
+    <string name="shipment_and_delivery">Shipment &amp; delivery</string>
+    <string name="return_or_exchange_policy">Return or exchange policy</string>
+    <string name="promotions">Promotions</string>
+    <string name="online_ordering">Online ordering</string>
+    <string name="comments_and_complains">Comments &amp; complains</string>
+    <string name="send_us_on">Send us on support@thegroceryshop.com For any comments or complains.</string>
+    <string name="express_delivery_note">Express delivery will cost extra.</string>
+    <string name="error_door_step">Sorry, this option cannot be selected for this order.</string>
+    <string name="select_a_date">Select a date</string>
+    <string name="webview_error">Looks like your chrome browser is not updated to download certificates. Do you wish to continue?</string>
+    <string name="payment_declined">Payment has been declined.</string>
+    <string name="payment_success">Your order is placed successfully.</string>
+    <string name="payment_failed">Payment failed.</string>
+    <string name="pls_wait_while_we_are_initiating_payment">Please wait while initiating the payment for the order.</string>
+    <string name="express_delivery_can_not_be_selected">Express delivery cannot be selected for this order.</string>
+    <string name="msg_404">System is currently under maintenance. Please try again later.</string>
+    <string name="returned">Returned</string>
+    <string name="notify_out_of_stock1">Sorry, %1$s is out of stock now.</string>
+    <string name="notify_out_of_stock">Sorry, %1$s was just sold out. Please press on \'Notify me\' to be informed once we restock.</string>
+    <string name="price_has_updated">Product %1$s\’s price has changed.</string>
+    <string name="checkout">Checkout</string>
+    <string name="error_update_quantity">Sorry, unable to change quantity of %1$s.</string>
+    <string name="got_it_start_shopping">GOT IT! START SHOPPING</string>
+    <string name="skip">Skip</string>
+
+    <string name="permission_camera_rationale">Access to the camera is needed to read barcode</string>
+    <string name="no_camera_permission">This scanning cannot run because it does not have the camera permission. The scanner will now exit.</string>
+
+    <string name="low_storage_error">Scanner dependencies cannot be downloaded due to low device storage</string>
+    <string name="loading_more_products">Loading more products…</string>
+
+    <string name="language_confirmation">Language?</string>
+    <string name="language_selection">What\'s your preferred language?</string>
+    <string name="language_english">English</string>
+    <string name="language_arabic">عربى</string>
+
+    <string name="see_all">See all</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="street">Street</string>
+    <string name="area">Area</string>
+    <string name="city">City</string>
+    <string name="add1">Add</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="credit_amount_error">Unable to load credit amount,\nPlease tab here to try again.</string>
+    <string name="select_a_card">Select a card</string>
+    <string name="add_amount">Add Amount</string>
+    <string name="explore_wide_range_of_categories">Explore the wide range of food categories.</string>
+    <string name="you_copuld_search_for_any">You could search for any product in our inventory</string>
+    <string name="select_you_address_on_the_map">Select your address on the map instead of writing it down</string>
+    <string name="we_will_notify_you_when">We will notify you when it is back in inventory.</string>
+    <string name="we_will_help_you_free">We help you free your time for the things that matter</string>
+    <string name="with_easy_to_use_menus">With easy to use menus and banners...</string>
+    <string name="with_barcode_scanning">With barcode scanning</string>
+    <string name="for_easier_registration">For easier registration</string>
+    <string name="whenever_a_product_is_out_of_stock">Whenever a product is out of stock</string>
+    <string name="with_your_tgs_account">With your TGS account...</string>
+    <string name="to">TO</string>
+    <string name="no_items_in_cart">No items in cart</string>
+
+    <string name="error_blank_amount">Please fill the amount to add as TGS credits.</string>
+    <string name="error_invalid_amount">Please enter valid integer or decimal amount with 2 decimal places.</string>
+    <string name="amount_added_successfully">Amount added successfully.</string>
+    <string name="use_x_credit">Use %1$s credits</string>
+    <string name="card_and_credits">Card &amp; Credits</string>
+    <string name="pay_by_card">Pay By CARD</string>
+    <string name="pay_by_credits">Pay By Credits</string>
+    <string name="paid_by_card">Paid By CARD</string>
+    <string name="paid_by_credits">Paid By Credits</string>
+    <string name="pls_enter_address_name">Please enter the Address Name.</string>
+    <string name="pls_enter_country">Please enter the Country.</string>
+    <string name="pls_enter_city">Please enter the City.</string>
+    <string name="pls_enter_area">Please enter the Area.</string>
+    <string name="pls_enter_floor_number">Please enter the Floor number.</string>
+    <string name="pls_enter_street_name">Please enter the Street Name.</string>
+    <string name="pls_enter_apt_number">Please enter the Apt Number.</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_city">Select City</string>
+    <string name="pls_scan_barcode">Adjust your camera on the product\’s barcode.</string>
+    <!--Zendesk String-->
+    <string name="request_list_activity_title">My tickets</string>
+    <string name="complaint">Complaint</string>
+    <string name="technical">Technical Issue</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="other">Other</string>
+
+    <string name="cash_and_credits">CASH &amp; Credits</string>
+    <string name="amount_to_pay">Amount to pay</string>
+    <string name="paid_in_cash">Paid in CASH</string>
+    <string name="credits_not_enough">Sorry, You don\'t have enough credits to place order, Please select your CASH or any CARD also.</string>
+    <string name="payment_setting">Payment Setting</string>
+
+    <!--Umesh Work Strings-->
+    <string name="create_a_new_list">create new Wish List</string>
+    <string name="enter_list_name">Please enter a name for Wish List.</string>
+    <string name="enter_list_description">Please enter some description for Wish List.</string>
+    <string name="select_wishlist_validation">Please select at least one Wish List to add a product.</string>
+    <string name="no_wishlist_text">There is no Wish List. Please create new one to add product.</string>
+    <string name="no_wishlist_products">There is no products in Wish List. Please add a product.</string>
+    <string name="empty">Empty</string>
+    <string name="my_list">Wish Lists</string>
+    <string name="wishlist_description_text">Add and organize your favorite products into wish lists. Start by creating a new wish list.</string>
+    <string name="adding_wishlist_to_cart">Adding Wish List to cart</string>
+    <string name="wishlist_added_to_cart">Wish List added to cart successfully.</string>
+    <string name="added_to_cart">Added to cart successfully.</string>
+    <string name="wishlist_remove_confrmation">Are you sure you want to remove Wish List?</string>
+    <string name="wishlist_item_remove_confrmation">Are you sure you want to remove this item from Wish List?</string>
+    <string name="no_saving_text">There is no savings.</string>
+    <string name="comments">comments</string>
+    <string name="please_enter_rating">Please rate the product by clicking on stars.</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="use_coupon">use coupon</string>
+    <string name="coupon_scan_title">coupon scan title</string>
+    <string name="discount">DISCOUNT</string>
+    <string name="done_wishlist">Done</string>
+    <string name="done_1">Done</string>
+    <string name="done_2">Done</string>
+    <string name="unsaved_changes">You have some unsaved changes in product list, Would you like to save it?</string>
+    <string name="pls_select_an_option">Please select an option.</string>
+    <string name="pls_enter_your_feedback_here">Please enter your feedback.</string>
+    <string name="exit">Exit</string>
+    <string name="show_cod_option">We are facing some issue with your card. Would you like to place your order with CASH on delivery?</string>
+    <string name="cash">CASH</string>
+    <string name="my_wishlists">My Wish lists</string>
+    <string name="product">Product</string>
+    <string name="products_added_to_cart">%1$s products added to cart</string>
+    <string name="notify_out_of_stock_new">Please note the following : \n</string>
+    <string name="review_cart">Review Cart</string>
+    <string name="proceed">Proceed</string>
+    <string name="our_services_not_avaliable">Our service is not available in this area.</string>
+    <string name="add_amount_to_credits">Add amount to Credits</string>
+    <string name="select_area">Select Area</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="pls_note_the_following">Please note the following : \n</string>
+    <string name="noti_out_of_stock_new">Product %1$s is currently out of stock.</string>
+    <string name="max_quantity_reached_msg_new">Product %1$s\’s quantity has been modified to match our current stock quantity.</string>
+    <string name="brands">Brands</string>
+    <string name="price_range">Price Range</string>
+    <string name="submit_rating">Submit</string>
+    <string name="order_id1">Order ID</string>
+    <string name="order_id_colon">Order ID:</string>
+    <string name="categories">Categories</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="choose_from">Choose from</string>
+    <string name="send">SEND</string>
+    <string name="feedback_submited_successful">Your Feedback has been sent successfully. Thank you for contacting us.</string>
+    <string name="give_us_some_information">Give Us Some Detail For This Location</string>
+    <string name="select_your_region">Select Your Region</string>
+    <string name="region">Region</string>
+    <string name="region_colon">Region:</string>
+    <string name="error_address_region">This address belongs to a different region. Please select address within the selected region.</string>
+    <string name="error_wishlist_region">This Wish List belongs to a different region. Please select a Wish List that belongs to currently selected region.</string>
+    <string name="button">Button</string>
+    <string name="home">Home</string>
+    <string name="work">Work</string>
+    <string name="select_address_name">Select Address Name</string>
+    <string name="valu">Installment by Valu</string>
+</resources>

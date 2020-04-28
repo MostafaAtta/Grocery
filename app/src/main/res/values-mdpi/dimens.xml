@@ -1,0 +1,30 @@
+<resources>
+
+    <!--toolbar views dimens-->
+
+
+    <!--app_intro screen-->
+    <dimen name="login_edt_height">35dp</dimen>
+    <!--Register screen-->
+
+    <!--Verify Email screen-->
+
+    <!--Change Email screen-->
+    <dimen name="change_email_text">13sp</dimen>
+    \
+
+    <!--Add Occupation screen-->
+
+    <!--Delete my account screen-->
+
+    <!--Edit group admin only screen-->
+
+    <!-- Regitration page -->
+    <dimen name="margin_bottom_edittext">3dp</dimen>
+
+
+    <!--Edit Profile-->
+    <dimen name="login_edt_margin">5dp</dimen>
+    <dimen name="grid_spacing">5dp</dimen>
+
+</resources>

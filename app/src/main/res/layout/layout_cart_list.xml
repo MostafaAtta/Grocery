@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayColorBackground"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCartList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mCheckoutBtn">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/mCheckoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/textViewDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="center"
+            android:text="@string/done_caps"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp15"
+            android:textStyle="bold" />
+        <!--   <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/dp10"
+               android:gravity="center"
+               android:text="@string/need_help_email_us"
+               android:textColor="@color/black"
+               android:textSize="@dimen/text_dp15"
+               android:textStyle="bold"
+               android:id="@+id/textView3" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

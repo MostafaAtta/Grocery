@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_bg">
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/accent_btn"
+        android:gravity="center"
+        android:text="@string/cancel_caps"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dp18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_done"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/accent_btn"
+        android:gravity="center"
+        android:text="@string/done_1"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dp18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel" />
+
+    <TextView
+        android:id="@+id/txtViewListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/list_name_caps"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_dp17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextListName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/purple_selector"
+        android:gravity="right"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences|textNoSuggestions"
+        android:maxLines="3"
+        android:padding="@dimen/dp10"
+        android:maxLength="60"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/text_dp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewListName" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/list_description_caps"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_dp17"
+        app:layout_constraintStart_toStartOf="@+id/txtViewListName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextListName" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/purple_selector"
+        android:gravity="top|right"
+        android:maxHeight="@dimen/dp120"
+        android:maxLength="250"
+        android:singleLine="true"
+        android:maxLines="5"
+        android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
+        android:minHeight="@dimen/dp120"
+        android:padding="@dimen/dp6"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/text_dp16"
+        app:layout_constraintEnd_toEndOf="@+id/editTextListName"
+        app:layout_constraintStart_toStartOf="@+id/editTextListName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_done" />
+</androidx.constraintlayout.widget.ConstraintLayout>

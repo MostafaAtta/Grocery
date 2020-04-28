@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <thegroceryshop.com.custom.loader.LoaderLayout
+        android:id="@+id/list_product_loader_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:loader_layout_progress_color="@color/red_line_color">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gridViewProductCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8"
+            android:gravity="center"
+            android:scrollbars="none"
+            android:stretchMode="spacingWidth" />
+
+    </thegroceryshop.com.custom.loader.LoaderLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/login_module_lyt_toolbar"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/colorPrimary"
+        android:minHeight="@dimen/dp45"
+        app:theme="@style/Theme.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/login_module_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/login_caps"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/text_dp20"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/login_module_img_logo"
+            android:layout_width="?android:actionBarSize"
+            android:layout_height="?android:actionBarSize"
+            android:layout_gravity="right"
+            android:padding="@dimen/dp10"
+            android:src="@mipmap/ic_launcher" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />-->
+
+    <FrameLayout
+        android:id="@+id/login_module_lyt_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

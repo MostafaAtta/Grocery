@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/base_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_red_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textVewCarry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:text="@string/you_saved_luggage"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp15" />
+
+        <thegroceryshop.com.custom.loader.LoaderLayout
+            android:id="@+id/my_account_loader"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:loader_layout_progress_color="@color/light_yellow_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp15">
+
+                <thegroceryshop.com.custom.Pinview
+                    android:id="@+id/my_account_pinview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    app:forceKeyboard="false"
+                    app:password="false"
+                    app:pinBackground="@drawable/light_yellow_edittext_bg"
+                    app:pinHeight="@dimen/dp40"
+                    app:pinLength="1"
+                    app:pinWidth="@dimen/dp35" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp25"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:src="@drawable/weight" />
+
+            </LinearLayout>
+        </thegroceryshop.com.custom.loader.LoaderLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lyt_my_savings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account1" />
+
+                <TextView
+                    android:id="@+id/textViewSavings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_weight="0.8"
+                    android:paddingStart="@dimen/dp10"
+                    android:text="@string/savings"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_account_detail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account2" />
+
+                <TextView
+                    android:id="@+id/textViewAccountDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/account_details"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_order_history"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account8" />
+
+                <TextView
+                    android:id="@+id/textViewOrderHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/order_history"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_manage_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:padding="@dimen/dp5"
+                    android:src="@mipmap/account15" />
+
+                <TextView
+                    android:id="@+id/textViewManageShippingAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/manage_shipping_address"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account3" />
+
+                <TextView
+                    android:id="@+id/textViewPaymentMethods"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/payment_method"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_tgs_credit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account6" />
+
+                <TextView
+                    android:id="@+id/textViewTGSCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/tgs_credit"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_language"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account4" />
+
+                <TextView
+                    android:id="@+id/textViewLanguage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/language"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_system_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account12" />
+
+                <TextView
+                    android:id="@+id/textViewNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/system_notifications"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_tgs_points"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account8" />
+
+
+                <TextView
+                    android:id="@+id/textViewTGSPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/tgs_point"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/my_account_line_color" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lyt_manage_cards"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account7" />
+
+                <TextView
+                    android:id="@+id/textViewManageMyCards"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/manage_my_cards"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lyt_my_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account8" />
+
+                <TextView
+                    android:id="@+id/textViewMyList"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/my_list"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_my_coupons"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account16" />
+
+                <TextView
+                    android:id="@+id/textViewMyCoupons"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp10"
+                    android:text="@string/my_coupons"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_recurring_orders"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account9" />
+
+                <TextView
+                    android:id="@+id/textViewManageMyOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/manage_my_recurring_order"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/my_account_line_color" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyt_faq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account10" />
+
+                <TextView
+                    android:id="@+id/textViewFAQ"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/faqs"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account11" />
+
+                <TextView
+                    android:id="@+id/textViewContactUs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/contact_us"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account13" />
+
+
+                <TextView
+                    android:id="@+id/textViewAboutUs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/about_us"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+
+            <LinearLayout
+                android:id="@+id/lyt_login_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:src="@mipmap/account14" />
+
+                <TextView
+                    android:id="@+id/txtViewLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="@string/login"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/my_account_line_color" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

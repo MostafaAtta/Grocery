@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_bg"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <include
+        layout="@layout/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.92"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp35"
+            android:gravity="center"
+            android:text="@string/rating_and_review"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18"
+            android:textStyle="bold" />
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/rate_and_review_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp30"
+            app:srb_borderColor="@color/transparent_color"
+            app:srb_fillColor="@color/white"
+            app:srb_numberOfStars="5"
+            app:srb_rating="0"
+            app:srb_starBackgroundColor="#7c5e7f"
+            app:srb_starSize="@dimen/dp35"
+            app:srb_starsSeparation="8dp"
+            app:srb_stepSize="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:text="@string/review_caps"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/rate_and_review_edt"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp15"
+            android:background="@drawable/purple_edittext_bg"
+            android:digits="qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,@._ "
+            android:gravity="top"
+            android:maxLength="250"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edt_txt_color" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:src="@mipmap/order_completed_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mCheckoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.08"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/textViewCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="center"
+            android:text="@string/submit_caps"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

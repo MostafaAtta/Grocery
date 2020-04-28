@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/countries_edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edt_height"
+        android:background="@color/grey_btn_bg"
+        android:padding="@dimen/dp8"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColorHint="@color/white"
+        android:layout_margin="@dimen/dp5"
+        android:hint="@string/name_code" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/countries_recyl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

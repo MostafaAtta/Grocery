@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/address_item_lyt_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        app:cardCornerRadius="@dimen/dp5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/address_layout_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/dp8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp40"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address_item_txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/dp40"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/purple_bg"
+                    android:textSize="@dimen/text_dp16"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/address_item_img_checke"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp5"
+                    android:src="@mipmap/checked" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/address_item_txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:visibility="gone"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp15" />
+
+            <TextView
+                android:id="@+id/address_item_txt_floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp15" />
+
+            <TextView
+                android:id="@+id/address_item_txt_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp15" />
+            <TextView
+                android:id="@+id/address_item_txt_building"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp15" />
+            <TextView
+                android:id="@+id/address_item_txt_street"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp15" />
+            <TextView
+                android:id="@+id/address_item_txt_area"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp15" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/address_item_view_disable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#50888888" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

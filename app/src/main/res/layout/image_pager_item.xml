@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <thegroceryshop.com.custom.loader.LoaderLayout
+        android:id="@+id/loader_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loader_layout_progress_color="@color/red_line_color">
+
+        <thegroceryshop.com.custom.ZoomableImageView
+            android:id="@+id/img_pager_item"
+            android:layout_width="match_parent"
+            android:src="@mipmap/icon_grocery"
+            android:layout_height="match_parent" />
+
+    </thegroceryshop.com.custom.loader.LoaderLayout>
+
+</LinearLayout>

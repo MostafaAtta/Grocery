@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white_light"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/startLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_alignEnd="@id/couponLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#d53c58" />
+
+        <LinearLayout
+            android:id="@+id/couponLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#d53c58" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:rotation="270">
+
+                <TextView
+                    android:id="@+id/coupon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="COUPON CODE"
+                    android:textColor="#81c8c4"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_alignEnd="@id/couponLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#d53c58" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginStart="-8dp"
+        android:layout_toEndOf="@id/startLayout"
+        android:gravity="center_horizontal">
+
+        <View
+            android:id="@+id/topCornerView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/traingle"
+            android:rotation="180" />
+
+        <View
+            android:id="@+id/bottomCornerView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/traingle"
+            android:rotation="360" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomCornerView"
+            android:layout_below="@id/topCornerView"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginTop="-8dp"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/dp5"
+                    android:layout_height="@dimen/dp5"
+                    android:background="@drawable/dotted_line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/dp5"
+                    android:layout_height="@dimen/dp5"
+                    android:background="@drawable/dotted_line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/dp5"
+                    android:layout_height="@dimen/dp5"
+                    android:background="@drawable/dotted_line"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/dp5"
+                    android:layout_height="@dimen/dp5"
+                    android:background="@drawable/dotted_line" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/endLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/centerLayout">
+
+        <View
+            android:id="@+id/rightView"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="#d53c58"
+            android:minHeight="120dp" />
+
+        <View
+            android:id="@+id/rightTopView"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:background="#d53c58" />
+
+        <View
+            android:id="@+id/rightBottomView"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d53c58" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/discount"
+                android:textColor="#81c8c4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtViewDiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="20%"
+                        android:textColor="#81c8c4"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/off"
+                        android:layout_marginTop="-8dp"
+                        android:textColor="#81c8c4"
+                        android:textSize="22sp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgViewCoupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/barcode1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

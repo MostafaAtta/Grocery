@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="@dimen/dp10"
+    android:background="@drawable/white_layout_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:weightSum="1.0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="@dimen/dp10"
+                    android:src="@mipmap/cart_list_icon1" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightGrayColor" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="@dimen/dp10"
+                    android:src="@mipmap/cart_list_icon1" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/lightGrayColor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="@dimen/dp10"
+                    android:src="@mipmap/cart_list_icon1" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightGrayColor" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="@dimen/dp10"
+                    android:src="@mipmap/cart_list_icon1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGrayColor" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_dp18"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10"
+                android:textColor="@color/dark_purple"
+                android:text="LIST 01"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="WEEKLY LIST"/>
+
+            <thegroceryshop.com.custom.RippleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:textColor="@color/light_yellow_bg"
+                android:background="@drawable/dark_red_layout_bg"
+                android:text="@string/add_to_cart_caps"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp5"
+                android:text="6 Products"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp15"
+            android:src="@mipmap/menu_icon" />
+    </LinearLayout>
+</LinearLayout>

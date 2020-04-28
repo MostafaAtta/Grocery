@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <thegroceryshop.com.custom.loader.LoaderLayout
+        android:id="@+id/loaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp8"
+        android:paddingStart="@dimen/dp8"
+        android:paddingEnd="@dimen/dp8"
+        android:layout_above="@id/txt_update"
+        android:layout_marginTop="@dimen/dp60"
+        app:loader_layout_default_text="@string/no_wishlist_products">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerWishListDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </thegroceryshop.com.custom.loader.LoaderLayout>
+
+    <TextView
+        android:id="@+id/txt_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/save_changes"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_nrml" />
+
+    <LinearLayout
+        android:id="@+id/list_product_lyt_add_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/dp55"
+        android:background="@color/light_red"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/list_product_txt_cart_add_or_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:padding="@dimen/dp5"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/list_product_lyt_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp12"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_product_txt_cart_capecity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+            <ProgressBar
+                android:id="@+id/list_product_progress_cart"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp3"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp5"
+                android:max="200" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_product_txt_eligible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp5"
+            android:text="@string/you_are_eligble_for_shipping"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

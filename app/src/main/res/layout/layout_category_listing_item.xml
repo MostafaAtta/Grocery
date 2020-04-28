@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/dp5"
+    android:layout_marginRight="@dimen/dp5"
+    android:background="@drawable/white_layout_bg">
+
+    <LinearLayout
+        android:id="@+id/cat_item_lyt_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutProductView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/cat_item_txt_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp2"
+                android:layout_marginRight="@dimen/dp2"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:minLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/product_listing_text"
+                autofit:minTextSize="8sp" />
+
+            <!--<TextView
+                android:id="@+id/cat_item_txt_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp2"
+                android:layout_marginRight="@dimen/dp2"
+                android:gravity="center"
+                android:maxLines="2"
+                android:minLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/product_listing_text"
+                android:textSize="@dimen/text_small" />-->
+
+            <thegroceryshop.com.custom.loader.LoaderLayout
+                android:id="@+id/cat_item_lyt_loader_img"
+                android:layout_width="match_parent"
+                app:loader_layout_progress_color="@color/red_line_color"
+                android:layout_height="wrap_content">
+
+                <thegroceryshop.com.custom.AspectRatioImageView
+                    android:id="@+id/cat_item_img_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ariv_heightRatio="1"
+                    android:layout_marginBottom="@dimen/dp5"
+                    app:ariv_widthRatio="1" />
+
+            </thegroceryshop.com.custom.loader.LoaderLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

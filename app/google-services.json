@@ -1,0 +1,183 @@
+{
+  "project_info": {
+    "project_number": "441105057501",
+    "firebase_url": "https://groceryshop-50112.firebaseio.com",
+    "project_id": "groceryshop-50112",
+    "storage_bucket": "groceryshop-50112.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441105057501:android:df8b8bb2d7789fd1",
+        "android_client_info": {
+          "package_name": "octal.com.onlinemart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441105057501-2fvfeosqjbdq1bta8tb1lkvjo02ippi8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "octal.com.onlinemart",
+            "certificate_hash": "4d0e06dde72a7740c70e19af56a53327f6714f9a"
+          }
+        },
+        {
+          "client_id": "441105057501-3k55bm87h3ah1ttcbajnld595lu19a01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "octal.com.onlinemart",
+            "certificate_hash": "a05639428ca5981f48bc509eb326ceba1779c84c"
+          }
+        },
+        {
+          "client_id": "441105057501-4dhgcg5iiqe8t85rd0ekrk4to0e0f4uf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "octal.com.onlinemart",
+            "certificate_hash": "915fa7599f2abd03c4e914d3301ac127be8d32e4"
+          }
+        },
+        {
+          "client_id": "441105057501-bcrfdn4h3qqp34iupd0m6fqr6rc90fdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSkcUOJ0dacKqyT34ls5z4riXmyTQzKHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441105057501-bcrfdn4h3qqp34iupd0m6fqr6rc90fdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441105057501:android:faa77f1ea7608f3a",
+        "android_client_info": {
+          "package_name": "com.deliveryboy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441105057501-2bjk2fv5027q61433h10pqdcdladugtm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deliveryboy",
+            "certificate_hash": "915fa7599f2abd03c4e914d3301ac127be8d32e4"
+          }
+        },
+        {
+          "client_id": "441105057501-bcrfdn4h3qqp34iupd0m6fqr6rc90fdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSkcUOJ0dacKqyT34ls5z4riXmyTQzKHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441105057501-bcrfdn4h3qqp34iupd0m6fqr6rc90fdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441105057501:android:29f8388aac17c1cf",
+        "android_client_info": {
+          "package_name": "thegroceryshop.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441105057501-j5tpkrloc2je0us6nv2p7dthsldue368.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "thegroceryshop.com",
+            "certificate_hash": "cb5fb9f982d20bc09ce514b14bf1894fecb10baa"
+          }
+        },
+        {
+          "client_id": "441105057501-ablp6ol5f8nob8ah4du0stuasrs5ge2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "thegroceryshop.com",
+            "certificate_hash": "915fa7599f2abd03c4e914d3301ac127be8d32e4"
+          }
+        },
+        {
+          "client_id": "441105057501-ehpkqpq9dicdcaq21gnqn98bb0cv16pi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "thegroceryshop.com",
+            "certificate_hash": "a05639428ca5981f48bc509eb326ceba1779c84c"
+          }
+        },
+        {
+          "client_id": "441105057501-cknjeui5ljbs70hdhe0ib2ne983m5ksb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "thegroceryshop.com",
+            "certificate_hash": "4d0e06dde72a7740c70e19af56a53327f6714f9a"
+          }
+        },
+        {
+          "client_id": "441105057501-bcrfdn4h3qqp34iupd0m6fqr6rc90fdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSkcUOJ0dacKqyT34ls5z4riXmyTQzKHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441105057501-bcrfdn4h3qqp34iupd0m6fqr6rc90fdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

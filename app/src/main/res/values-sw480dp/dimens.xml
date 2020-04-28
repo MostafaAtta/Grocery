@@ -1,0 +1,33 @@
+<resources>
+
+    <!--toolbar views dimens-->
+
+    <!--app_intro screen-->
+
+    <!--Register screen-->
+    <dimen name="TEXT_INPUT_BOTTOM">5dp</dimen>
+
+    <!--Verify Email screen-->
+
+    <!--Change Email screen-->
+    <dimen name="change_email_text">18sp</dimen>
+
+    <!--Add Occupation screen-->
+
+    <!--Delete my account screen-->
+
+    <!--Edit group admin only screen-->
+
+
+    <!-- Regitration page -->
+    <dimen name="margin_bottom_edittext">10dp</dimen>
+
+
+    <!-- City Screen-->
+
+    <!--Getting Started-->
+
+    <!-- Education -->
+
+    <!--Edit Profile-->
+</resources>

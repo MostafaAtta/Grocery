@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_marginLeft="@dimen/dp5"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_layout_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/dp10"
+            android:src="@mipmap/cart_list_icon1"/>
+        <TextView
+            android:id="@+id/textViewProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/product_listing_text"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textSize="@dimen/text_dp15"
+            android:text="BEETROOT"
+            />
+        <TextView
+            android:id="@+id/textViewProductQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_dp10"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="@color/product_listing_text"
+            android:text="1 KILO"
+            />
+        <TextView
+            android:id="@+id/textViewProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black"
+            android:text="10 L.E"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/light_purple_semi_corner_layout_bg"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="@string/add_to_cart_caps"
+                android:textColor="@color/light_yellow_bg"
+                android:textSize="@dimen/text_dp15"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

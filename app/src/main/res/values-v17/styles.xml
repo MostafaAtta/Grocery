@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DatePickerDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:listPreferredItemPaddingLeft">0dip</item>
+        <item name="android:listPreferredItemPaddingRight">0dip</item>
+        <item name="android:listPreferredItemPaddingStart">0dip</item>
+        <item name="android:listPreferredItemPaddingEnd">0dip</item>
+    </style>
+</resources>

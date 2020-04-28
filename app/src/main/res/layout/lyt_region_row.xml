@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="@dimen/dp55">
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:clickable="false"
+        android:background="@color/grey_btn_bg"/>-->
+
+    <RadioButton
+        android:id="@+id/radio_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_gravity="center_vertical"
+        android:button="@drawable/radio_region"
+        android:textSize="@dimen/_10sdp"
+        android:clickable="false"
+        android:paddingStart="@dimen/dp15"/>
+
+</LinearLayout>

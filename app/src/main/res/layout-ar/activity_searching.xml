@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayColorBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:background="@color/search_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:background="@color/search_bg"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp8"
+            android:scaleX="-1"
+            android:src="@drawable/top_search" />
+
+        <TextView
+            android:id="@+id/search_txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp8"
+            android:background="@color/search_bg"
+            android:paddingRight="@dimen/dp8"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/search_edt_serach_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:imeOptions="actionSearch"
+            android:layout_toRightOf="@+id/search_txt_cancel"
+            android:background="@color/search_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/search_product_here"
+            android:maxLines="1"
+            android:minLines="1"
+            android:layout_marginRight="@dimen/dp45"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="@dimen/dp8"
+            android:paddingRight="@dimen/dp8"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_hint"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <thegroceryshop.com.custom.loader.LoaderLayout
+        android:id="@+id/search_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loader_layout_progress_color="@color/red_line_color">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_recyl_suggestions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </thegroceryshop.com.custom.loader.LoaderLayout>
+
+</LinearLayout>

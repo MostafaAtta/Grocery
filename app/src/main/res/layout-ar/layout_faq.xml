@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/grayColorBackground"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp20"
+        android:overScrollMode="never"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@drawable/white_layout_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/faq_lyt_ordering"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_marginEnd="@dimen/dp55"
+                    android:text="@string/ordering"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp15"
+                    android:scaleX="@integer/flip_value"
+                    android:src="@mipmap/right_icon_small" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/faq_lyt_registration"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/dp55"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_centerVertical="true"
+                    android:text="@string/registration_and_personal"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp15"
+                    android:scaleX="@integer/flip_value"
+                    android:src="@mipmap/right_icon_small" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/faq_lyt_shipment_and_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp55"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:text="@string/shipment_and_delivery"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp15"
+                    android:scaleX="@integer/flip_value"
+                    android:src="@mipmap/right_icon_small" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/faq_lyt_payment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp55"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_toLeftOf="@+id/rightArrow"
+                    android:layout_toStartOf="@+id/rightArrow"
+                    android:text="@string/payment"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp16" />
+
+                <ImageView
+                    android:id="@+id/rightArrow"
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp15"
+                    android:scaleX="@integer/flip_value"
+                    android:src="@mipmap/right_icon_small" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/faq_lyt_return_or_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp55"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:text="@string/return_or_exchange_policy"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp15"
+                    android:scaleX="@integer/flip_value"
+                    android:src="@mipmap/right_icon_small" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/faq_lyt_promotions"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp55"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:text="@string/promotions"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp15"
+                    android:scaleX="@integer/flip_value"
+                    android:src="@mipmap/right_icon_small" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/faq_lyt_online_ordering"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp55"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:text="@string/online_ordering"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp15"
+                    android:scaleX="@integer/flip_value"
+                    android:src="@mipmap/right_icon_small" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/faq_lyt_comments"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp55"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:text="@string/comments_and_complains"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp15"
+                    android:scaleX="@integer/flip_value"
+                    android:src="@mipmap/right_icon_small" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

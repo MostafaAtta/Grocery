@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayoutSlide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/base_lyt_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:openDrawer="end">
+
+            <RelativeLayout
+                android:id="@+id/maine_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/top"
+                    layout="@layout/app_bar_home_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+
+                <FrameLayout
+                    android:id="@+id/base_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/top" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/base_side_list_sidemenu"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/side_menu_color"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+        <FrameLayout
+            android:id="@+id/base_lyt_showCaseViwe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#96000000"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp50"
+                android:src="@drawable/trivangle_tile" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="60dp"
+                app:cardBackgroundColor="#E9E4C7">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:text="@string/welcome"
+                        android:textAllCaps="true"
+                        android:textColor="@color/dark_red_bg"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_showcase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/base_btn_keep_shopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp15"
+                        android:background="@drawable/red_btn_selector"
+                        android:paddingLeft="@dimen/dp15"
+                        android:paddingRight="@dimen/dp15"
+                        android:text="@string/keep_shoping"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

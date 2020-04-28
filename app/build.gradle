@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'newrelic'
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "thegroceryshop.com"
+        minSdkVersion 18
+        targetSdkVersion 29
+        versionCode 33
+        versionName "3.59"
+        multiDexEnabled true
+
+        dexOptions {
+            preDexLibraries = false
+            javaMaxHeapSize "4g"
+        }
+
+    }
+
+    signingConfigs {
+
+        // all signing configuration from "keystore.properties" file.
+        Properties store_props = new Properties()
+        store_props.load(new FileInputStream(file("../keystore/keystore.properties")))
+
+        debug {
+            storeFile file("../keystore/${store_props.getProperty('debug.keystore.file')}")
+            keyPassword store_props.getProperty('debug.keystore.entry.password')
+            storePassword store_props.getProperty('debug.keystore.password')
+            keyAlias store_props.getProperty('debug.keystore.entry.alias')
+        }
+
+        release {
+            storeFile file("../keystore/${store_props.getProperty('release.keystore.file')}")
+            keyPassword store_props.getProperty('release.keystore.entry.password')
+            storePassword store_props.getProperty('release.keystore.password')
+            keyAlias store_props.getProperty('release.keystore.entry.alias')
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = 1.8
+    }
+    buildToolsVersion = '29.0.1'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //google
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-plus:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-vision:19.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.browser:browser:1.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.3.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.11.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.thoughtbot:expandablerecyclerview:1.3'
+    implementation 'net.danlew:android.joda:2.10.3'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+    // facebook
+    implementation 'com.facebook.android:facebook-android-sdk:6.0.0'
+    implementation 'com.facebook.android:facebook-marketing:5.5.0'
+
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+    implementation 'com.kyleduo.switchbutton:library:1.4.5'
+    implementation 'com.newrelic.agent.android:android-agent:5.24.2'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation project(':calendar')
+    implementation project(':library')
+    implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    implementation 'org.jsoup:jsoup:1.12.2'
+    implementation 'com.karumi:dexter:6.0.2'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //implementation 'me.grantland:autofittextview:0.2.+'
+
+
+
+    // Recommended: Add the Firebase SDK for Google Analytics.
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+
+    // Add the Firebase SDK for Crashlytics.
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.0-beta01'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

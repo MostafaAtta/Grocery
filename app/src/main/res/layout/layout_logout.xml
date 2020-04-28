@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_layout_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp40">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:text="@string/logout_question"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_dp21"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:text="@string/logout_warning"
+        android:textColor="@color/grey_color_txt"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <thegroceryshop.com.custom.RippleButton
+                android:id="@+id/buttonCancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_red_rectangle_border"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="@string/cancel_caps"
+                android:textColor="@color/dark_red_bg"
+                android:textSize="@dimen/text_dp15"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight=".4"
+            android:orientation="horizontal">
+
+            <thegroceryshop.com.custom.RippleButton
+                android:id="@+id/buttonLogout"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_red_layout_bg_no_curve"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="@string/logout"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp15" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

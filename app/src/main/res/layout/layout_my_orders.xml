@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <include
+                    layout="@layout/common_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    style="@style/TabLayoutTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:tabBackground="@color/cancel_btn_txt"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/light_yellow_bg"
+                    app:tabIndicatorHeight="4dp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabTextColor="@color/tab_layout_divider" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!--app:tabTextAppearance="@style/MyTabLayoutTextAppearance"-->
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mCheckoutBtn"
+                android:layout_below="@+id/appBarLayout"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <LinearLayout
+                android:id="@+id/mCheckoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewCheckOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp15"
+                    android:gravity="center"
+                    android:text="@string/done_caps"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp18"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

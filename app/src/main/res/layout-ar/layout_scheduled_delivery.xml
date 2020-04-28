@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollview"
+        android:layout_above="@+id/mCheckoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grayColorBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@color/dark_red_bg">
+
+                <TextView
+                    android:id="@+id/textViewTack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp15"
+                    android:gravity="center"
+                    android:text="@string/select_slot_to_receive"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_dp15"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <thegroceryshop.com.custom.loader.LoaderLayout
+                android:id="@+id/loader_slots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:layoutDirection="rtl"
+                android:minHeight="150dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/slots_grid"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </thegroceryshop.com.custom.loader.LoaderLayout>
+
+            <TextView
+                android:id="@+id/textViewCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp10"
+                android:gravity="center"
+                android:text="@string/please_tap_on_the_day"
+                android:textColor="@color/gray_50"
+                android:textSize="@dimen/text_dp15"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/mCheckoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <thegroceryshop.com.custom.RippleButton
+            android:id="@+id/slots_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.45"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="@string/cancel_caps"
+            android:fontFamily="@font/ge_ss_two_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <thegroceryshop.com.custom.RippleButton
+            android:id="@+id/slots_btn_done"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.45"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="@string/done_2"
+            android:fontFamily="@font/ge_ss_two_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18" />
+
+
+    </LinearLayout>
+</RelativeLayout>

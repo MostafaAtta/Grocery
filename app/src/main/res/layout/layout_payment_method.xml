@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_bg">
+
+        <LinearLayout
+            android:id="@+id/payment_method_lyt_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp8"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="@string/powered_by"
+                    android:textColor="@color/white" />
+
+                <thegroceryshop.com.custom.AspectRatioImageView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:src="@drawable/icon_paymob"
+                    app:ariv_heightRatio="1"
+                    app:ariv_widthRatio="4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/payment_method_txt_add_amount"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="@string/add_amount"
+                android:gravity="center"
+                android:textSize="@dimen/text_nrml"
+                android:layout_height="@dimen/dp40" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp15"
+            android:gravity="start"
+            android:layout_margin="@dimen/dp8"
+            android:text="@string/credit_card_terms"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp12"
+            android:typeface="sans" />
+
+        <thegroceryshop.com.custom.loader.LoaderLayout
+            android:id="@+id/payment_method_lyt_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/payment_method_lyt_done"
+            android:layout_below="@+id/textViewTitle"
+            app:loader_layout_progress_color="@color/red_line_color"
+            app:loader_layout_text_color="@color/white">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/payment_method_recyl_cards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15" />
+
+        </thegroceryshop.com.custom.loader.LoaderLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/logo_picture_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/change_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:background="@color/backgroundColor"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:minHeight="@dimen/dp45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/change_password"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp45"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:text="@string/new_password"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/white_transparent_layout_bg"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:padding="@dimen/dp10"
+                    android:textColorHint="@color/edt_txt_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:text="@string/retype_new_password"
+                    android:textColor="@color/grey_color_txt"
+                    android:textSize="@dimen/text_dp15" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextRetypeNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/white_transparent_layout_bg"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:padding="@dimen/dp10"
+                    android:textColorHint="@color/edt_txt_color" />
+
+            </LinearLayout>
+
+            <thegroceryshop.com.custom.RippleButton
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:background="@drawable/dark_red_layout_bg"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="@string/change_password"
+                android:textColor="@color/light_yellow_bg"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/otp_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18" />
+
+        <TextView
+            android:id="@+id/textViewOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp30"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18" />
+
+        <thegroceryshop.com.custom.Pinview
+            android:id="@+id/opt_pinView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            app:hint="-"
+            app:inputType="number"
+            app:password="false"
+            app:pinBackground="@drawable/white_transparent_layout_bg"
+            app:pinHeight="@dimen/dp50"
+            app:pinLength="4"
+            app:pinWidth="@dimen/dp50" />
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp18"
+            android:textStyle="bold" />
+
+        <thegroceryshop.com.custom.RippleButton
+            android:id="@+id/resendOtpBtn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:text="RESEND OTP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp20"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <thegroceryshop.com.custom.RippleButton
+            android:id="@+id/rippleButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginLeft="@dimen/dp50"
+            android:layout_marginRight="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/red_btn_selector"
+            android:gravity="center"
+            android:text="@string/confirm_caps"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp20"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_bg">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp10"
+        android:text="@string/select_payment"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dp18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:fontFamily="@font/fonts"
+        android:textStyle="italic"
+        android:text="@string/credit_card_terms"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp12" />
+
+    <LinearLayout
+        android:id="@+id/card_list_bootom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/powered_by"
+                android:layout_gravity="bottom"
+                android:textColor="@color/white"
+                />
+
+            <thegroceryshop.com.custom.AspectRatioImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:ariv_widthRatio="4"
+                android:layout_marginLeft="@dimen/dp2"
+                android:src="@drawable/icon_paymob"
+                app:ariv_heightRatio="1"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="@dimen/dp45">
+
+            <TextView
+                android:id="@+id/card_list_txt_done"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="@string/review_order1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewNext"
+                android:layout_width="@dimen/dp45"
+                android:layout_height="@dimen/dp45"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:padding="@dimen/dp10"
+                android:src="@mipmap/right_arrow"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <thegroceryshop.com.custom.loader.LoaderLayout
+        android:id="@+id/cardlist_loader"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_height="match_parent"
+        app:loader_layout_text_color="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/dp80"
+        android:layout_marginTop="@dimen/dp6"
+        app:loader_layout_progress_color="@color/white"
+        android:layout_alignParentStart="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/card_footer_lyt_cash_on_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginBottom="@dimen/dp8"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_gravity="top"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/card_footer_img_manage_card"
+                    android:layout_width="@dimen/dp45"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:background="@drawable/dark_red_layout_no_border_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/dp6"
+                    android:src="@mipmap/uncheck" />
+
+
+                <TextView
+                    android:id="@+id/card_footer_txt_manage_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/card_footer_img_manage_card"
+                    android:background="@color/dark_purple"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp8"
+                    android:text="@string/cash_on_delivery"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_dp15" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card_footer_lyt_valu_installment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginBottom="@dimen/dp8"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_footer_lyt_cash_on_delivery"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@+id/card_footer_lyt_cash_on_delivery"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/card_footer_img_valu"
+                    android:layout_width="@dimen/dp45"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:background="@drawable/dark_red_layout_no_border_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/dp6"
+                    android:src="@mipmap/uncheck" />
+
+
+                <TextView
+                    android:id="@+id/card_footer_txt_valu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/card_footer_img_valu"
+                    android:background="@color/dark_purple"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp8"
+                    android:text="@string/valu"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_dp15" />
+
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/card_list_recyl_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/card_list_bootom"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dp120" />
+
+    </thegroceryshop.com.custom.loader.LoaderLayout>
+
+</RelativeLayout>

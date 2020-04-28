@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/checkout_img_back"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp35"
+            android:padding="@dimen/dp2"
+            android:src="@mipmap/top_back"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center"
+                            android:background="@android:color/white" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/select_address_frame"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:background="@drawable/white_circle">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp25"
+                            android:layout_gravity="center"
+                            android:src="@drawable/top_map_pin" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/select_address"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/dp25"
+                        android:background="@drawable/white_circle"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@android:color/darker_gray" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white" />
+
+                    <FrameLayout
+                        android:id="@+id/goto_order_frame"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center"
+                        android:background="@drawable/white_circle"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp25"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/top_list_icon" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/goto_order"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/dp25"
+                        android:background="@drawable/white_circle"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@android:color/darker_gray" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white" />
+
+                    <FrameLayout
+                        android:id="@+id/delivery_time_frame"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center"
+                        android:background="@drawable/white_circle"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp25"
+                            android:layout_gravity="center"
+                            android:src="@drawable/top_clock" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/delivery_time"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_gravity="center"
+                        android:background="@drawable/white_circle"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@android:color/darker_gray" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white" />
+
+                    <FrameLayout
+                        android:id="@+id/order_review_frame"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center"
+                        android:background="@drawable/white_circle"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp25"
+                            android:layout_gravity="center"
+                            android:src="@drawable/top_coins" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/order_review"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        android:background="@drawable/white_circle"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@android:color/darker_gray" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center"
+                            android:background="@android:color/white" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="5dp"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/order_chekout_done"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_gravity="center"
+                        android:background="@drawable/white_circle"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <FrameLayout
+                        android:id="@+id/order_chekout_done_frame"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_gravity="center"
+                        android:background="@drawable/white_circle"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp25"
+                            android:layout_gravity="center"
+                            android:src="@drawable/top_right" />
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <thegroceryshop.com.utils.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

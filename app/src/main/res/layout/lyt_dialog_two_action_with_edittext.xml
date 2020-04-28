@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dp12"
+    android:layout_marginRight="@dimen/dp12"
+    android:background="@drawable/white_layout_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp40">
+
+    <TextView
+        android:id="@+id/dialog_twoaction_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:text="@string/enter_cvv"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_dp21"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp8"
+            android:layout_marginTop="@dimen/dp30"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_twoaction_txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cvv_note"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/dialog_twoaction_edt_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edt_height"
+                android:layout_margin="@dimen/login_edt_margin"
+                android:digits="0123456789"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="number|numberPassword"
+                android:maxLength="3"
+                android:padding="@dimen/dp8"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/normal" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <thegroceryshop.com.custom.RippleButton
+                android:id="@+id/dialog_left_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_red_rectangle_border"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="@string/cancel_caps"
+                android:textColor="@color/dark_red_bg"
+                android:textSize="@dimen/text_dp15"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight=".4"
+            android:orientation="horizontal">
+
+            <thegroceryshop.com.custom.RippleButton
+                android:id="@+id/dialog_right_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_red_layout_bg_no_curve"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="@string/ok"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp15" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_error_two_option"
+        android:layout_margin="@dimen/dp20"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/dialog_twoaction_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/dialog_blue_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal" />
+
+        <TextView
+            android:id="@+id/dialog_twoaction_txt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textSize="@dimen/normal"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:padding="@dimen/dp10" />
+
+        <EditText
+            android:id="@+id/dialog_twoaction_edt_input"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp8"
+            android:textSize="@dimen/normal"
+            android:layout_height="@dimen/login_edt_height"
+            android:layout_margin="@dimen/login_edt_margin"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/white"
+            android:inputType="textCapCharacters"
+            android:background="@drawable/edt_text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <octal.com.onlinemart.custom.RippleButton
+                android:id="@+id/dialog_left_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_gray_left_footer"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <octal.com.onlinemart.custom.RippleButton
+                android:id="@+id/dialog_right_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_gray_right_footer"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal" />
+
+        </LinearLayout>
+    </LinearLayout>-->
+

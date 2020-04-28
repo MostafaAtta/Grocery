@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/base_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp40"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:gravity="center"
+                android:text="@string/having_problem_with"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="@string/call_us_caps"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/dark_red_layout_bg"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="+20 1021757111"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp17"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="@string/or_email_us"
+                android:textColor="@color/grey_color_txt"
+                android:textSize="@dimen/text_dp18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/dark_red_layout_bg"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="help@thegroceryshop.com  "
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_dp17"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/mCheckoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60"
+                android:scaleType="centerInside"
+                android:src="@mipmap/screen_logo" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

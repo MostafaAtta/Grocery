@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularImageView">
+
+        <!-- Specifies whether or not to draw a circular border around the image. -->
+        <attr name="civ_border" format="boolean" />
+        <!-- Specifies the color of the border draw around the image. (if enabled) -->
+        <attr name="civ_border_color" format="color" />
+        <!-- Makes the border this pixels wide. (if enabled) -->
+        <attr name="civ_border_width" format="dimension" />
+        <!-- Specifies whether or not to draw a selector on this view upon touch events. -->
+        <attr name="civ_selector" format="boolean" />
+        <!-- Specifies the color of the selector draw on top of the image upon touch events. (if enabled) -->
+        <attr name="civ_selector_color" format="color" />
+        <!-- Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) -->
+        <attr name="civ_selector_stroke_color" format="color" />
+        <!-- Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) -->
+        <attr name="civ_selector_stroke_width" format="dimension" />
+        <!-- Specifies whether or not to draw a shadow around your circular image. -->
+        <attr name="civ_shadow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+    <!--<declare-styleable name="SettingsToggle">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="string" />
+        <attr name="prefName" format="string" />
+        <attr name="oval_background_off" format="string" />
+        <attr name="oval_background_on" format="string" />
+    </declare-styleable>-->
+    <declare-styleable name="Pinview">
+        <attr name="pinBackground" format="reference" />
+        <attr name="pinLength" format="integer" />
+        <attr name="pinWidth" format="dimension" />
+        <attr name="pinHeight" format="dimension" />
+        <attr name="splitWidth" format="dimension" />
+        <attr name="cursorVisible" format="boolean" />
+        <attr name="password" format="boolean" />
+        <attr name="forceKeyboard" format="boolean" />
+        <attr name="hint" format="string" />
+        <attr name="inputType" />
+    </declare-styleable>
+    <attr name="inputType" format="enum">
+        <enum name="text" value="0" />
+        <enum name="number" value="1" />
+    </attr>
+
+    <declare-styleable name="ProgressCircle">
+        <attr name="loader_circle_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LoaderLayout">
+        <attr name="loader_layout_default_text" format="string" />
+        <attr name="loader_layout_text_color" format="color" />
+        <attr name="loader_layout_progress_color" format="color" />
+        <attr name="loader_layout_text_size" format="dimension" />
+        <attr name="loader_layout_show_progress_at_start" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+        <attr name="dateFormat" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="ariv_widthRatio" format="integer" />
+        <attr name="ariv_heightRatio" format="integer" />
+    </declare-styleable>
+</resources>

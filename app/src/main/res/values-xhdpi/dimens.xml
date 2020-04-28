@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--toolbar views dimens-->
+    <dimen name="login_edt_height">40dp</dimen>
+    <!--app_intro screen-->
+
+    <!--Register screen-->
+
+    <!--Verify Email screen-->
+
+    <!--Change Email screen-->
+    <dimen name="change_email_text">16sp</dimen>
+
+    <!--Add Occupation screen-->
+
+    <!--Delete my account screen-->
+
+    <!--Edit group admin only screen-->
+
+
+    <!-- Regitration page -->
+    <dimen name="margin_bottom_edittext">5dp</dimen>
+
+
+    <!--Login Screen Dimens _H-->
+
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="loginEdtSize">45dp</dimen>
+    <dimen name="edtDifferenceTop">0dp</dimen>
+    <dimen name="editPaddingLeft">10dp</dimen>
+    <dimen name="edtLoginTextSize">15dp</dimen>
+
+    <dimen name="btnTextSize">18dp</dimen>
+    <dimen name="btnHeight">46dp</dimen>
+    <dimen name="btnMarginTop">24dp</dimen>
+
+    <!-- City Screen-->
+
+    <!--Getting Started-->
+
+    <!-- Education -->
+    <dimen name="TEXT_INPUT_BOTTOM">2dp</dimen>
+
+    <!--Edit Profile-->
+
+    <dimen name="login_edt_margin">8dp</dimen>
+
+    <dimen name="text_small">10dp</dimen>
+    <dimen name="grid_spacing">13dp</dimen>
+</resources>

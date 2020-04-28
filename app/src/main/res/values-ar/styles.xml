@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+        <item name="android:homeAsUpIndicator">@mipmap/top_back</item>
+        <item name="homeAsUpIndicator">@mipmap/top_back</item>
+    </style>
+
+    <style name="YellowAccentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#F9F1C0</item>
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+        <item name="android:homeAsUpIndicator">@mipmap/top_back</item>
+        <item name="homeAsUpIndicator">@mipmap/top_back</item>
+    </style>
+
+    <!-- ActionBar theme. -->
+    <style name="ActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+        <item name="android:homeAsUpIndicator">@mipmap/top_back</item>
+        <item name="homeAsUpIndicator">@mipmap/top_back</item>
+    </style>
+
+    <style name="RedActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#D53C58</item>
+        <item name="colorPrimaryDark">#972338</item>
+        <item name="colorAccent">#D53C58</item>
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+        <item name="android:homeAsUpIndicator">@mipmap/top_back</item>
+        <item name="homeAsUpIndicator">@mipmap/top_back</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RatingBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+    </style>
+    <!--For rating bar -->
+    <style name="RatingBarfeed" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/dark_light_yellow</item>
+        <item name="colorPrimary">@color/dark_light_yellow</item>
+        <item name="android:minHeight">@dimen/dp20</item>
+        <item name="android:maxHeight">@dimen/dp20</item>
+        <item name="android:progressDrawable">@drawable/ratings</item>
+    </style>
+
+    <style name="RobotoCalendarMonthText">
+        <item name="android:textSize">@dimen/roboto_calendar_month_font</item>
+        <item name="android:textColor">@color/roboto_calendar_month_font</item>
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+    </style>
+
+    <style name="RobotoCalendarDayOfTheWeekText">
+        <item name="android:textSize">@dimen/roboto_calendar_day_of_week_font</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_the_month_font</item>
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <!--<item name="android:textAppearance">?android:textAppearanceMedium</item>-->
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:textSize">@dimen/text_dp16</item>
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:fontFamily">@font/ge_ss_two_medium</item>
+    </style>
+
+    <style name="LinearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="AddressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowSoftInputMode">adjustResize|stateAlwaysHidden</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="DatePickerDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <!--<item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>-->
+
+        <item name="android:listPreferredItemPaddingLeft">0dip</item>
+        <item name="android:listPreferredItemPaddingRight">0dip</item>
+
+        <!--
+        <item name="colorBackgroundCacheHint">@null</item>
+
+        <item name="buttonBarStyle">@android:style/Holo.Light.ButtonBar.AlertDialog</item>
+        <item name="borderlessButtonStyle">@android:style/Widget.Holo.Light.Button.Borderless.Small</item>
+
+        <item name="textAppearance">@style/TextAppearance.Holo.Light</item>
+        <item name="textAppearanceInverse">@style/TextAppearance.Holo.Light.Inverse</item>
+
+        <item name="listPreferredItemPaddingLeft">16dip</item>
+        <item name="listPreferredItemPaddingRight">16dip</item>
+        <item name="listPreferredItemPaddingStart">16dip</item>
+        <item name="listPreferredItemPaddingEnd">16dip</item>
+
+        <item name="preferencePanelStyle">@style/PreferencePanel.Dialog</item>-->
+    </style>
+</resources>

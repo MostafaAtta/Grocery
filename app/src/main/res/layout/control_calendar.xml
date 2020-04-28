@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- date toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_red_bg">
+
+        <ImageView
+            android:id="@+id/calendar_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/roboto_calendar_padding"
+            android:layout_marginRight="@dimen/roboto_calendar_padding"
+            android:padding="@dimen/dp10"
+            app:srcCompat="@mipmap/right_arrow" />
+
+        <TextView
+            android:id="@+id/calendar_date_display"
+            style="@style/RobotoCalendarMonthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dp10"
+            android:tag="dateTitle"
+            android:text="MONTH YEAR"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dp15"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/calendar_prev_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/roboto_calendar_padding"
+            android:layout_marginRight="@dimen/roboto_calendar_padding"
+            android:padding="@dimen/dp10"
+            app:srcCompat="@mipmap/left_arrow" />
+
+    </RelativeLayout>
+
+    <!-- days header -->
+    <LinearLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="SUN"
+            android:textColor="@color/dark_red_bg" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="MON"
+            android:textColor="#222222" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="TUE"
+            android:textColor="#222222" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="WED"
+            android:textColor="#222222" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="THU"
+            android:textColor="#222222" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="FRI"
+            android:textColor="#222222" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="SAT"
+            android:textColor="#222222" />
+    </LinearLayout>
+
+    <!-- days view -->
+    <GridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="7" />
+</LinearLayout>

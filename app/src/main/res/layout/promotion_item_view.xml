@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/promotion_img"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginLeft="@dimen/dp5"
+            android:padding="@dimen/dp8" />
+
+        <TextView
+            android:id="@+id/promotion_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp5"
+            android:gravity="left|center_vertical"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white_90"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark_green"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/categoryItme_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
+</LinearLayout>
