@@ -467,7 +467,7 @@ public class CardListFragment extends Fragment {
 
                                 if (!ValidationUtil.isNullOrBlank(OnlineMartApplication.mLocalStore.getDefaultPaymentMethod())) {
                                     if (OnlineMartApplication.mLocalStore.getDefaultPaymentMethod().equalsIgnoreCase("-1")) {
-                                        isCashOnDelivery = true;
+                                        //isCashOnDelivery = true;
                                         selectedCard = null;
                                     } else {
                                         isCashOnDelivery = false;
@@ -481,7 +481,7 @@ public class CardListFragment extends Fragment {
                                         }
                                     }
                                 }else{
-                                    isCashOnDelivery = true;
+                                    //isCashOnDelivery = true;
                                     selectedCard = null;
                                 }
 

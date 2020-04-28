@@ -240,6 +240,7 @@ public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         this.creditsToUse = creditsToUse;
         this.useTGSCredits = useTGSCredits;
         this.isCreditsAvailable = false;
+        this.useValu = false;
         this.useTGSCredits = false;
         notifyItemChanged(list_cards.size()-1);
 
@@ -268,6 +269,7 @@ public class CardListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         void onCardSelectListener(int position, boolean useCredits);
         void onAddNewCard();
         void onCashOnDelivery();
+        //update value layout click
         void onValu();
         void onUserCreditsChanged(boolean isUseCredits);
     }
